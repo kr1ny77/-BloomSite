@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08110E"><meta name="description" content="Bloom помогает понимать состав, пищевую ценность и результаты исследований продуктов. Знайте, что выбираете. Концепция приложения.">
+<title>Bloom — Знайте, что выбираете</title>
+<link rel="icon" type="image/png" href="/static/images/favicon.png">
+<link rel="preload" as="image" href="/static/images/bloom-icon.webp">
+<link rel="stylesheet" href="/static/css/style.css">
+<script defer src="/static/js/gsap.min.js"></script><script defer src="/static/js/ScrollTrigger.min.js"></script><script defer src="/static/js/lenis.min.js"></script><script defer src="/static/js/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a><div class="progress" aria-hidden="true"></div>
+<header class="topbar"><div class="shell"><div class="nav-inner">
+<div class="brand-group"><a class="brand" href="#hero" aria-label="Bloom — начало"><img src="/static/images/bloom-mark.webp" width="27" height="31" alt="">Bloom</a><span class="beta">BETA</span></div>
+<nav class="nav-links" aria-label="Основная навигация"><a href="#about">О Bloom</a><a href="#how">Как это работает</a><a href="#trust">Источники</a></nav>
+<a class="nav-end" href="#app"><span class="status-dot" aria-hidden="true"></span>Приложение <span aria-hidden="true">↗</span></a>
+</div></div></header>
+<main id="main">
+<section id="hero" class="hero shell" aria-labelledby="hero-title">
+<div class="hero-art"><img src="/static/images/bloom-icon.webp" width="1321" height="1191" alt="Фирменный зелёный знак Bloom на тёмной иконке" fetchpriority="high"></div>
+<div class="hero-label eyebrow">Ясность в каждом выборе</div>
+<h1 id="hero-title"><span class="line">Знайте,</span><span class="line">что <em>выбираете.</em></span></h1>
+<p class="hero-copy">Понятные факты о продуктах.</p>
+<div class="stores" aria-label="Приложение скоро появится">
+<button class="store" type="button" aria-disabled="true" aria-label="App Store — скоро"><svg viewBox="0 0 24 26" aria-hidden="true"><path d="M17.3 0c.2 1.6-.5 3.1-1.4 4.1-1 1.1-2.5 1.8-3.9 1.7-.2-1.5.5-3 1.4-4C14.4.7 16 .1 17.3 0ZM21.9 19.3c-.6 1.4-.9 2.1-1.7 3.4-1.1 1.6-2.6 3.6-4.5 3.6-1.7 0-2.2-1.1-4.5-1.1s-2.9 1.1-4.6 1.2c-1.9.1-3.3-1.8-4.4-3.4C-.9 18.4-.6 11.7 1.4 8.9c1.5-2 3.8-3.1 6-3.1 1.9 0 3.1 1.1 4.6 1.1s2.4-1.1 4.6-1.1c1.7 0 3.6.9 5 2.6-4.4 2.5-3.7 8.8.3 10.9Z"/></svg><span><small>Скоро в</small><strong>App Store</strong></span></button>
+<button class="store" type="button" aria-disabled="true" aria-label="Google Play — скоро"><svg viewBox="0 0 24 26" aria-hidden="true"><path d="m2 1 13 12L2 25Zm2-1 15 9-3 3Zm15 17L4 26l12-12Zm1-7 4 2.3v1.4L20 16l-3-3Z"/></svg><span><small>Скоро в</small><strong>Google Play</strong></span></button>
+</div>
+<div class="hero-bottom"><a class="scroll-cue" href="#about"><span class="scroll-arrow" aria-hidden="true">↓</span><span>Узнайте Bloom ближе</span></a><span class="hero-index"><b>01</b><i></i>06</span></div>
+</section>
+<section id="about" class="context shell" aria-labelledby="context-title">
+<div class="section-top"><span class="number">01 /</span><span class="eyebrow muted">От привычки — к пониманию</span></div>
+<h2 class="context-heading" id="context-title"><span class="line-mask"><span>Каждая покупка —</span></span><span class="line-mask"><span>это выбор.</span></span><span class="line-mask muted"><span>Но что за ним стоит?</span></span></h2>
+<div class="context-visual"><img src="/static/images/groceries.webp" width="1672" height="941" alt="Молоко, йогурт, крупа и зелёное яблоко в спокойной тёмной продуктовой сцене" loading="lazy"><p class="context-caption">На упаковке —<br>не вся история.</p></div>
+<div class="question-list"><p><span>01</span>Что в составе?</p><p><span>02</span>Что показали исследования?</p><p><span>03</span>На что опереться при выборе?</p></div>
+</section>
+<section id="how" class="rating-section" aria-labelledby="rating-title"><div class="rating-stage shell">
+<div class="rating-head"><span class="eyebrow"><span class="muted">02 /</span> Как это работает</span><span class="eyebrow muted">От фактов — к выводу</span></div>
+<div class="rating-layout"><div class="rating-left"><h2 class="rating-title" id="rating-title">Оценка<br>с <em>объяснением.</em></h2>
+<div class="story-steps"><article class="story-step active"><span>01</span><div><h3>Состав и пищевая ценность</h3><p>Ингредиенты и питательные вещества: что именно вы выбираете.</p></div></article><article class="story-step"><span>02</span><div><h3>Показатели исследований</h3><p>Что измерили в конкретном образце и какие данные доступны.</p></div></article><article class="story-step"><span>03</span><div><h3>Сравнение с нормативами</h3><p>С чем сопоставляется результат и на чём основан вывод.</p></div></article></div>
+</div><div class="rating-visual"><img class="rating-phone" src="/static/images/result-phone.webp" alt="Пример экрана результата Bloom" width="420" height="838" loading="lazy"><div class="rating-dial" role="img" aria-label="92 из 100 — демонстрационный пример оценки"><svg viewBox="0 0 340 340" aria-hidden="true"><circle class="dial-track" cx="170" cy="170" r="148" pathLength="1000" stroke-dasharray="750 1000"/><circle class="dial-value" cx="170" cy="170" r="148" pathLength="1000"/></svg><div class="dial-center"><strong>92</strong><span>из 100</span><small>ДЕМОНСТРАЦИОННЫЙ ПРИМЕР</small></div></div></div></div>
+<div class="rating-note"><span class="conclusion">За цифрой — понятное объяснение.</span><span>Если данных недостаточно, Bloom показывает это.</span></div>
+</div></section>
+<section id="trust" class="trust" aria-labelledby="trust-title"><div class="shell"><div class="section-top"><span class="number">03 /</span><span class="eyebrow muted">Доверие можно проверить</span></div><h2 id="trust-title"><span class="line-mask"><span>За каждым выводом —</span></span><span class="line-mask"><span><em>источник.</em></span></span></h2>
+<div class="trust-chain"><article class="trust-item"><span class="eyebrow">01</span><h3>Показатель</h3><p>Что измерено<br>в образце</p></article><article class="trust-item"><span class="eyebrow">02</span><h3>Норматив</h3><p>С чем сравнивается<br>результат</p></article><article class="trust-item"><span class="eyebrow">03</span><h3>Протокол</h3><p>Где проверить<br>данные</p></article></div>
+<p class="trust-foot">Результат исследования относится к конкретному образцу.</p></div></section>
+<section id="app" class="app-section" aria-labelledby="app-title"><div class="shell"><div class="section-top"><span class="number">04 /</span><span class="eyebrow">Всё складывается в ясность</span></div><div class="app-heading"><h2 id="app-title">Больше,<br>чем оценка.</h2><p>Состав. Пищевая ценность.<br>Показатели исследований.<br>Проверяемые источники.</p></div>
+<div class="devices" aria-label="Статичные концептуальные экраны приложения Bloom"><figure class="device device-one"><img src="/static/images/result-phone.webp" width="420" height="838" alt="Экран результата с примером оценки 92 из 100" loading="lazy"></figure><figure class="device device-two"><img src="/static/images/composition-phone.webp" width="420" height="838" alt="Экран состава и пищевой ценности продукта" loading="lazy"></figure><figure class="device device-three"><div class="source-phone" role="img" aria-label="Концептуальный экран источников: показатель, норматив, протокол. Документы появятся при наличии данных."><div class="phone-status"><span>9:41</span><span>▪▪▪ ▰</span></div><div class="phone-title"><span class="phone-back">‹</span>Источники данных</div><div class="source-intro"><img src="/static/images/bloom-mark.webp" width="24" height="28" alt=""><h4>Проверяемость<br>в деталях.</h4><p>За каждым выводом —<br>доступные данные.</p></div><div class="source-row"><span>01</span><div><strong>Показатель</strong><small>Что измерено в образце</small></div></div><div class="source-row"><span>02</span><div><strong>Норматив</strong><small>Основание для сравнения</small></div></div><div class="source-row"><span>03</span><div><strong>Протокол</strong><small>Источник результата</small></div></div><p class="source-bottom">Документы появятся при наличии данных.<br>Концепция экрана</p></div></figure></div>
+<p class="app-caption">Вся информация — в одном приложении.<span>Концепция интерфейса. Данные на экранах приведены для примера.</span></p></div></section>
+<section class="final shell" aria-labelledby="final-title"><div class="final-top"><span class="eyebrow">05 / Хороший выбор начинается с ясности</span><span class="beta">BETA</span></div><div class="final-body"><img class="final-art" src="/static/images/bloom-icon.webp" width="1321" height="1191" alt="" loading="lazy"><h2 id="final-title">Знайте,<br>что <em>выбираете.</em></h2><p>Bloom помогает опираться на понятные факты о продуктах.</p><div class="stores" aria-label="Приложение скоро появится"><button class="store" type="button" aria-disabled="true" aria-label="App Store — скоро"><span aria-hidden="true">↗</span><span><small>Скоро в</small><strong>App Store</strong></span></button><button class="store" type="button" aria-disabled="true" aria-label="Google Play — скоро"><span aria-hidden="true">↗</span><span><small>Скоро в</small><strong>Google Play</strong></span></button></div></div>
+<footer class="footer"><a class="brand" href="#hero"><img src="/static/images/bloom-mark.webp" width="23" height="27" alt="">Bloom</a><span class="footer-mid">Понятные факты о продуктах.</span><span>Концепция продукта</span></footer></section>
+</main>
+</body></html>
