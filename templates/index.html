@@ -39,7 +39,7 @@
       crossorigin
     />
     <link rel="stylesheet" href="/static/css/style.css?v=hero-v2" />
-    <script defer src="/static/js/intro.js?v=hero-v3"></script>
+    <script defer src="/static/js/intro.js?v=video60-1"></script>
     <script defer src="/static/js/app.js?v=interaction3"></script>
     <script defer src="/static/js/presentation.js?v=5"></script>
     <script defer src="/static/js/product.js?v=return1"></script>
@@ -377,17 +377,28 @@
                 fetchpriority="high"
               />
             </picture>
-            <img
+            <video
               class="wordmark-animation"
-              src="/static/media/bloom-logo/static-v3-light.webp"
               width="1200"
               height="500"
-              data-light-src="/static/media/bloom-logo/intro-v3-light.webp"
-              data-dark-src="/static/media/bloom-logo/intro-v3-dark.webp"
-              alt=""
+              muted
+              playsinline
+              preload="none"
+              disablepictureinpicture
               aria-hidden="true"
               hidden
-            />
+            >
+              <source
+                type="video/quicktime; codecs=hvc1"
+                data-light-src="/static/media/bloom-logo/intro-v3-light-60.mov"
+                data-dark-src="/static/media/bloom-logo/intro-v3-dark-60.mov"
+              />
+              <source
+                type="video/webm; codecs=vp9"
+                data-light-src="/static/media/bloom-logo/intro-v3-light-60.webm"
+                data-dark-src="/static/media/bloom-logo/intro-v3-dark-60.webm"
+              />
+            </video>
           </div>
         </div>
       </section>

@@ -1,5 +1,7 @@
 # Smoother hero animation · v3 · 2026-11-05
 
+Playback delivery below is historical: native 60fps video supersedes animated WebP. See `HERO-VIDEO-60.md` for the current implementation and measured presentation rates.
+
 Request: replace the initial-screen animation with the newly delivered smoother film. Source found in `../bloom-logo-rounded/v3/`; its `VERSIONS.md` identifies v3 as current. Preserve the existing hero composition and site behavior.
 
 ## Delivery

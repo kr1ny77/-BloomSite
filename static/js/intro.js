@@ -17,9 +17,9 @@
   const showStill = () => {
     finished = true;
     window.clearTimeout(timer);
+    artwork.pause();
     host.dataset.introState = 'static';
     artwork.hidden = true;
-    artwork.removeAttribute('src');
   };
   const updateTheme = () => {
     updateStatic();
@@ -40,25 +40,44 @@
   });
   if (motion.matches || document.hidden) return;
 
-  const requestedAt = performance.now();
+  // Use the native video clock and media events, not image animation timers.
   artwork.addEventListener(
-    'load',
+    'canplay',
     () => {
-      // Avoid a delayed blank-to-logo transition on a slow connection.
-      if (
-        finished ||
-        motion.matches ||
-        performance.now() - requestedAt > 1200
-      ) {
+      if (finished || motion.matches) return;
+      try {
+        const playback = artwork.play();
+        if (playback) void playback.catch(showStill);
+      } catch {
         showStill();
-        return;
       }
-      artwork.hidden = false;
-      host.dataset.introState = 'playing';
-      timer = window.setTimeout(showStill, 5000);
     },
     { once: true },
   );
+  artwork.addEventListener('playing', () => {
+    if (finished || motion.matches) {
+      showStill();
+      return;
+    }
+    window.clearTimeout(timer);
+    artwork.hidden = false;
+    host.dataset.introState = 'playing';
+  });
+  artwork.addEventListener('ended', showStill, { once: true });
   artwork.addEventListener('error', showStill, { once: true });
-  artwork.src = dark() ? artwork.dataset.darkSrc : artwork.dataset.lightSrc;
+  artwork.addEventListener('waiting', () => {
+    // Brief decoder/network stalls may recover; only abandon a sustained stall.
+    if (finished || host.dataset.introState !== 'playing') return;
+    window.clearTimeout(timer);
+    timer = window.setTimeout(showStill, 1800);
+  });
+  artwork.muted = true;
+  artwork.playsInline = true;
+  artwork.playbackRate = 1;
+  artwork.preload = 'auto';
+  for (const source of artwork.querySelectorAll('source')) {
+    source.src = dark() ? source.dataset.darkSrc : source.dataset.lightSrc;
+  }
+  timer = window.setTimeout(showStill, 1800);
+  artwork.load();
 })();

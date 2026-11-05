@@ -1,0 +1,55 @@
+{
+  "method": "requestVideoFrameCallback; active interval 0.3–2.6s; getVideoPlaybackQuality after ended",
+  "chrome": {
+    "src": "intro-v3-dark-60.webm",
+    "duration": 5,
+    "ended": true,
+    "total": 300,
+    "dropped": 6,
+    "callbackCount": 150,
+    "observedFPS": 58.0159345135205,
+    "activeFPS": 58.218595954445014,
+    "activeFirst": {
+      "now": 536.9,
+      "media": 0.3,
+      "frames": 15,
+      "display": 533.7
+    },
+    "activeLast": {
+      "now": 2870.3,
+      "media": 2.6,
+      "frames": 152,
+      "display": 2886.9
+    },
+    "visibility": "visible",
+    "state": "static",
+    "webm": "probably",
+    "hevc": ""
+  },
+  "inApp": {
+    "src": "intro-v3-light-60.webm",
+    "duration": 5,
+    "ended": true,
+    "total": 300,
+    "dropped": 2,
+    "callbackCount": 149,
+    "observedFPS": 59.198908331995504,
+    "activeFPS": 59.99739141776445,
+    "activeFirst": {
+      "now": 422.2,
+      "media": 0.3,
+      "frames": 17,
+      "display": 438.9
+    },
+    "activeLast": {
+      "now": 2722.3,
+      "media": 2.6,
+      "frames": 155,
+      "display": 2739
+    },
+    "visibility": "visible",
+    "state": "static",
+    "webm": "probably",
+    "hevc": ""
+  }
+}

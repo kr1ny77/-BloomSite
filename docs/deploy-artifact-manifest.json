@@ -3,15 +3,39 @@
   "files": [
     {
       "file": "index.html",
-      "sha": "fe9270d6c82ead1631dfaa273ef09704dac3d2a5",
-      "sha256": "532aa0b123dfada97f0bde64116e7cbb48adbea63f1221a72a5f4f622c2cd1c1",
-      "size": 31727
+      "sha": "210d19b34157ba9d89f4bcb9e79df14e7c5d5eba",
+      "sha256": "ba42b7623fb58fd66deabbf418a767d680ed8f2ccc35b695c6c340a33a417514",
+      "size": 32121
     },
     {
       "file": "static/css/style.css",
       "sha": "236a45cd581be1b6c1b38c071199bdb2490eff8e",
       "sha256": "f9e771dba2e8d4c350561071b8a31a000e8daa634e30da14c6245ff016a8058b",
       "size": 35583
+    },
+    {
+      "file": "static/fonts/OFL.txt",
+      "sha": "12c29b4c541b7ba0f0d5d86818697558c1c28d76",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "size": 4387
+    },
+    {
+      "file": "static/fonts/Onest-OFL.txt",
+      "sha": "f7e61c8cd20b2dffbbb690887571c679d11c38e9",
+      "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc",
+      "size": 4384
+    },
+    {
+      "file": "static/fonts/OoohBaby-OFL.txt",
+      "sha": "e982b74c7f10863aea4ad621d2d32cab5d63d7c9",
+      "sha256": "a768f4c2b04f8e960236f9854c8afeb3626fb34927f25aa66aa7f1cc8cea715e",
+      "size": 4397
+    },
+    {
+      "file": "static/fonts/Pacifico-OFL.txt",
+      "sha": "49b8cff0cbd9ece132be784264b89507d69de430",
+      "sha256": "a47e5daeda73568969395c656823102678f2eefb0d7d7ecb47aac4cc17e42204",
+      "size": 4389
     },
     {
       "file": "static/fonts/manrope-regular.ttf",
@@ -38,22 +62,10 @@
       "size": 30376
     },
     {
-      "file": "static/fonts/OFL.txt",
-      "sha": "12c29b4c541b7ba0f0d5d86818697558c1c28d76",
-      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
-      "size": 4387
-    },
-    {
       "file": "static/fonts/onest-bloom.woff2",
       "sha": "a440cfd8b826bf4b388fda457c46dd6545f771f7",
       "sha256": "42286d99e9540adcf9c1a526aa98c3db24488e7aeab984a83b854155d3eda5c9",
       "size": 41080
-    },
-    {
-      "file": "static/fonts/Onest-OFL.txt",
-      "sha": "f7e61c8cd20b2dffbbb690887571c679d11c38e9",
-      "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc",
-      "size": 4384
     },
     {
       "file": "static/fonts/onest-variable.ttf",
@@ -80,22 +92,10 @@
       "size": 53664
     },
     {
-      "file": "static/fonts/OoohBaby-OFL.txt",
-      "sha": "e982b74c7f10863aea4ad621d2d32cab5d63d7c9",
-      "sha256": "a768f4c2b04f8e960236f9854c8afeb3626fb34927f25aa66aa7f1cc8cea715e",
-      "size": 4397
-    },
-    {
       "file": "static/fonts/pacifico-loom.woff2",
       "sha": "dfd699312b62694d7a894a5fc997faf3aa4ea495",
       "sha256": "0d5f333a1421804571797ea057a2978874191c4328c9944609949e178df722f3",
       "size": 3644
-    },
-    {
-      "file": "static/fonts/Pacifico-OFL.txt",
-      "sha": "49b8cff0cbd9ece132be784264b89507d69de430",
-      "sha256": "a47e5daeda73568969395c656823102678f2eefb0d7d7ecb47aac4cc17e42204",
-      "size": 4389
     },
     {
       "file": "static/fonts/pacifico-regular.ttf",
@@ -440,6 +440,12 @@
       "size": 62274
     },
     {
+      "file": "static/js/ScrollTrigger.min.js",
+      "sha": "ecd3242f5dac796b8d205d4084d877d0663e040f",
+      "sha256": "308219390e5e3b84cda0c481e70caa9820883ae10bda44e6e9a149a81aac4b3f",
+      "size": 44157
+    },
+    {
       "file": "static/js/app.js",
       "sha": "bfc0322cddec93f07ac951f22444a5bd6e45b1db",
       "sha256": "ef5d00d5152f80734ed2e202c4592d82c5c0c67bb18252fdfc867f18a79e9127",
@@ -453,9 +459,9 @@
     },
     {
       "file": "static/js/intro.js",
-      "sha": "077872fac623a9a588f779820dcef1b04149cfb8",
-      "sha256": "dca2add45e10cb00fa60f436adb81de9d7dd07e86fb3b40ecd78479414e2c838",
-      "size": 2048
+      "sha": "4dd6943db9891a6b663c00d94873d9ed9e65f4c6",
+      "sha256": "ff61f397d42a88a748b679cb19d7cd7bdc783ba759713481327fc7b66bbce533",
+      "size": 2729
     },
     {
       "file": "static/js/lenis.min.js",
@@ -500,12 +506,6 @@
       "size": 379
     },
     {
-      "file": "static/js/ScrollTrigger.min.js",
-      "sha": "ecd3242f5dac796b8d205d4084d877d0663e040f",
-      "sha256": "308219390e5e3b84cda0c481e70caa9820883ae10bda44e6e9a149a81aac4b3f",
-      "size": 44157
-    },
-    {
       "file": "static/media/bloom-intro.mp4",
       "sha": "7c91e68f2d25e13358f558230e09214c56fc66a3",
       "sha256": "3a3910cf0fa41ef6327bcf1b47d22362e1886748501548b259bfb4b0acd5654e",
@@ -524,10 +524,34 @@
       "size": 606708
     },
     {
+      "file": "static/media/bloom-logo/intro-v3-dark-60.mov",
+      "sha": "c2c4fc267d799f37e1aaa7bd5828dc370d686108",
+      "sha256": "a36c3784a381973399302d4fb4d1b23b520ab2a061a4e069082d6d7d4268a40a",
+      "size": 2049303
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-dark-60.webm",
+      "sha": "d7b4aa65d602d9fa25a6db36d5cbef6fe6ae46a3",
+      "sha256": "1ee2b487e50eff6ea93282f73cb9a9ae09da69261911d4054a94e13504d28746",
+      "size": 1002424
+    },
+    {
       "file": "static/media/bloom-logo/intro-v3-dark.webp",
       "sha": "96b94903d60601bdd4b64c85275d5c532dbc0c15",
       "sha256": "ed3798e671458ad7d0796f6399c4085c4ba0a7f0c8d2d07e0f883c3f2579a5bd",
       "size": 2127032
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-light-60.mov",
+      "sha": "c6fb0ee5e7a357d04b97befeecc5088a2b3cf33b",
+      "sha256": "371e5d753c5b3990821df9e955f88d1590518aa3d1515a248eb68eb937ea7fb6",
+      "size": 1863711
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-light-60.webm",
+      "sha": "def7ba6ba3911775177a1c311a94604030fa7a0a",
+      "sha256": "979001d0b1ed84a337f68400a57da271f73418c64fd84227fdf494dd8ca7af28",
+      "size": 706070
     },
     {
       "file": "static/media/bloom-logo/intro-v3-light.webp",

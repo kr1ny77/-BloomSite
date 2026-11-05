@@ -47,7 +47,7 @@ func TestPresentationContract(t *testing.T) {
 	rr := httptest.NewRecorder()
 	handler().ServeHTTP(rr, httptest.NewRequest("GET", "/", nil))
 	body := rr.Body.String()
-	for _, required := range []string{`lang="ru"`, `id="hero"`, `id="about"`, `id="how"`, `id="app"`, `id="trust"`, `presentation.js`, `class="wordmark-animation"`, `data-light-src="/static/media/bloom-logo/intro-v3-light.webp"`, `static-v3-dark.webp`, `og:image`, `bloom-social.jpg`, `result-phone.webp`, `composition-phone.webp`, `Демонстрационные данные`, `Данных недостаточно`} {
+	for _, required := range []string{`lang="ru"`, `id="hero"`, `id="about"`, `id="how"`, `id="app"`, `id="trust"`, `presentation.js`, `class="wordmark-animation"`, `data-light-src="/static/media/bloom-logo/intro-v3-light-60.webm"`, `static-v3-dark.webp`, `og:image`, `bloom-social.jpg`, `result-phone.webp`, `composition-phone.webp`, `Демонстрационные данные`, `Данных недостаточно`} {
 		if !strings.Contains(body, required) {
 			t.Errorf("missing presentation contract: %s", required)
 		}
@@ -60,7 +60,12 @@ func TestPresentationContract(t *testing.T) {
 }
 
 func TestHeroLogoAssets(t *testing.T) {
-	for _, name := range []string{"intro-v3-light.webp", "intro-v3-dark.webp", "static-v3-light.webp", "static-v3-dark.webp"} {
+	assets := map[string]string{
+		"intro-v3-light-60.webm": "video/webm", "intro-v3-dark-60.webm": "video/webm",
+		"intro-v3-light-60.mov": "video/quicktime", "intro-v3-dark-60.mov": "video/quicktime",
+		"static-v3-light.webp": "image/webp", "static-v3-dark.webp": "image/webp",
+	}
+	for name, mimeType := range assets {
 		req := httptest.NewRequest("GET", "/static/media/bloom-logo/"+name, nil)
 		req.Header.Set("Range", "bytes=0-15")
 		rr := httptest.NewRecorder()
@@ -68,8 +73,8 @@ func TestHeroLogoAssets(t *testing.T) {
 		if rr.Code != http.StatusPartialContent || rr.Body.Len() != 16 {
 			t.Fatalf("%s range: status=%d bytes=%d", name, rr.Code, rr.Body.Len())
 		}
-		if !strings.HasPrefix(rr.Header().Get("Content-Type"), "image/webp") {
-			t.Fatalf("unexpected logo type: %s", rr.Header().Get("Content-Type"))
+		if !strings.HasPrefix(rr.Header().Get("Content-Type"), mimeType) {
+			t.Fatalf("unexpected logo type for %s: %s", name, rr.Header().Get("Content-Type"))
 		}
 	}
 }

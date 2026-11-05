@@ -18,7 +18,7 @@
 - Node.js is pinned to `24.x` in package metadata and project settings to avoid automatic major-version changes.
 - Install: `npm ci --include=dev`. Build: `npm run build`. Output: `dist`.
 - canonical, og:url and the absolute og:image use `https://bloomfacts.vercel.app/`.
-- `docs/deploy-artifact-manifest.json` records SHA1/SHA256 and sizes for all 94 output files (12,540,432 bytes after public URL metadata was added).
+- `docs/deploy-artifact-manifest.json` records SHA1/SHA256 and sizes for all 98 output files (18,163,015 bytes including native 60fps video alternatives).
 
 ## First successful release
 
@@ -43,7 +43,7 @@ DigitalPlat's current UI also offers managed DigitalPlat DNS; the older reposito
 
 ## Verification
 
-- `npm run build`: pass. `node --test tests/*.test.mjs`: 40 pass. `go test ./...`: pass.
+- `npm run build`: pass. `node --test tests/*.test.mjs`: 41 pass. `go test ./...`: pass.
 - Anonymous HTTPS checks for the homepage and all 93 static files: 200, correct MIME types, SHA256 matches the checked build, no missing assets. Results: `deployment-http-check.json`.
 - Browser on the real public origin: homepage, menu, navigation to the app section, loaded WebGL canvas, keyboard rotation/reset and return to the homepage checked. No browser warning/error logs during that check.
 - Production responsive views inspected at 390×680 and 320×680, plus a sandboxed JavaScript-disabled view. Logo loads in every view; document widths match the viewports. Screenshot evidence: `deployment-live-home.jpg`, `deployment-live-product.jpg`, `deployment-live-mobile.jpg`.
@@ -56,3 +56,7 @@ DigitalPlat's current UI also offers managed DigitalPlat DNS; the older reposito
 - Store buttons intentionally remain future-launch placeholders; demo product data remains identified as examples.
 - Physical iOS/Safari devices and continuous production monitoring were not verified/configured in this release.
 - This record may be followed by documentation/metadata commits. The exact current source/deployment SHA is available from GitHub `main` and the Vercel deployment record; do not confuse the first release SHA above with every later deployment.
+
+## Hero video follow-up
+
+Animated WebP playback was replaced with native 60fps VP9/HEVC video. Motion and brand artwork are preserved. Local measured active presentation: 60.00fps in in-app Chromium and 58.22fps in Chrome; see `HERO-VIDEO-60.md` and `hero-video60-browser.json`. Original release HTTP evidence above is historical; the current artifact manifest includes four additional video files.
