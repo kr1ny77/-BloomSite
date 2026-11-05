@@ -13,6 +13,8 @@ function openPage({
   theme,
   hidden = false,
   blocked = false,
+  hevc = false,
+  unsupported = false,
 } = {}) {
   const events = new Map(),
     timers = new Map();
@@ -27,15 +29,30 @@ function openPage({
   const root = { dataset: theme ? { theme } : {} };
   const host = { dataset: { introState: 'static' } };
   const darkSource = {};
+  const closingSource = {};
   const sources = [
-    { dataset: { lightSrc: 'light.mov', darkSrc: 'dark.mov' } },
-    { dataset: { lightSrc: 'light.webm', darkSrc: 'dark.webm' } },
+    {
+      type: 'video/quicktime',
+      dataset: { lightSrc: 'light.mov', darkSrc: 'dark.mov' },
+    },
+    {
+      type: 'video/webm',
+      dataset: { lightSrc: 'light.webm', darkSrc: 'dark.webm' },
+    },
   ];
   let loads = 0,
     plays = 0,
     pauses = 0;
   const artwork = {
     hidden: true,
+    canPlayType: (type) =>
+      unsupported
+        ? ''
+        : type.includes('quicktime')
+          ? hevc
+            ? 'probably'
+            : ''
+          : 'probably',
     querySelectorAll: () => sources,
     addEventListener: (event, cb) => events.set(event, cb),
     load: () => {
@@ -55,6 +72,7 @@ function openPage({
     documentElement: root,
     hidden,
     addEventListener: (event, cb) => events.set(event, cb),
+    querySelectorAll: () => [darkSource, closingSource],
     querySelector: (selector) =>
       ({
         '.hero-brand': host,
@@ -87,6 +105,7 @@ function openPage({
     root,
     host,
     darkSource,
+    closingSource,
     sources,
     artwork,
     document,
@@ -108,7 +127,12 @@ test('video waits for data and actual playing before replacing the still', () =>
   assert.equal(p.artwork.playbackRate, 1);
   p.events.get('canplay')();
   assert.equal(p.counts().plays, 1);
-  assert.equal(p.artwork.hidden, true);
+  assert.equal(p.artwork.hidden, false);
+  assert.equal(
+    p.host.dataset.introState,
+    'static',
+    'poster covers decoder preparation',
+  );
   p.events.get('playing')();
   assert.equal(p.artwork.hidden, false);
   assert.equal(p.host.dataset.introState, 'playing');
@@ -118,19 +142,21 @@ test('video waits for data and actual playing before replacing the still', () =>
     'native video completion owns playback, not a wall-clock timeout',
   );
 });
-test('system and manual themes populate both native codec alternatives consistently', () => {
-  const p = openPage({ dark: true });
-  assert.deepEqual(
-    p.sources.map((s) => s.src),
-    ['dark.mov', 'dark.webm'],
-  );
+test('choose one compatible codec and theme; hero and closing use the same ink', () => {
+  const p = openPage({ dark: true, hevc: true });
+  assert.equal(p.artwork.src, 'dark.mov');
   assert.equal(p.darkSource.media, 'all');
+  assert.equal(p.closingSource.media, 'all');
   const light = openPage({ dark: true, theme: 'light' });
-  assert.deepEqual(
-    light.sources.map((s) => s.src),
-    ['light.mov', 'light.webm'],
-  );
+  assert.equal(light.artwork.src, 'light.webm');
   assert.equal(light.darkSource.media, 'not all');
+  assert.ok(
+    p.sources.every((s) => s.src === undefined),
+    'no parallel/fallback codec downloads',
+  );
+  const unsupported = openPage({ unsupported: true });
+  assert.equal(unsupported.counts().loads, 0);
+  assert.equal(unsupported.artwork.hidden, true);
 });
 test('reduced motion and hidden initial documents download no video', () => {
   for (const settings of [{ reduced: true }, { hidden: true }]) {
@@ -148,7 +174,7 @@ test('native ended restores the complete still, preserving video quality counter
   assert.equal(p.artwork.hidden, true);
   assert.equal(p.host.dataset.introState, 'static');
   assert.equal(p.counts().pauses, 1);
-  assert.equal(p.sources[1].src, 'light.webm');
+  assert.equal(p.artwork.src, 'light.webm');
 });
 test('startup timeout retains the still and a late canplay or playing cannot restart it', () => {
   const p = openPage();
@@ -205,6 +231,7 @@ test('theme switches choose matching static ink and do not replay the video', ()
   p.root.dataset.theme = 'dark';
   p.events.get('theme')();
   assert.equal(p.darkSource.media, 'all');
+  assert.equal(p.closingSource.media, 'all');
   assert.equal(p.artwork.hidden, true);
   p.events.get('playing')();
   assert.equal(p.artwork.hidden, true);

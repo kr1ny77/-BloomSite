@@ -1,5 +1,7 @@
 # Hero playback correction · 2026-11-05
 
+Historical v3 release record. The current v4 keeps native 60fps delivery and reveals the leaf earlier; see `REFINEMENT-BARCODE.md`.
+
 User reported low apparent frame rate. Scope: preserve the approved v3 scene and choreography; correct delivery and verify presentation, then publish to the existing project.
 
 ## Diagnosis and change

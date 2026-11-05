@@ -2,8 +2,8 @@
   'use strict';
   const host = document.querySelector('.hero-brand');
   const artwork = document.querySelector('.wordmark-animation');
-  const darkSource = document.querySelector('.wordmark-dark-source');
-  if (!host || !artwork || !darkSource) return;
+  const darkSources = [...document.querySelectorAll('.wordmark-dark-source')];
+  if (!host || !artwork || !darkSources.length) return;
   const root = document.documentElement;
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const scheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -12,7 +12,7 @@
   const dark = () =>
     root.dataset.theme ? root.dataset.theme === 'dark' : scheme.matches;
   const updateStatic = () => {
-    darkSource.media = dark() ? 'all' : 'not all';
+    for (const source of darkSources) source.media = dark() ? 'all' : 'not all';
   };
   const showStill = () => {
     finished = true;
@@ -46,6 +46,8 @@
     () => {
       if (finished || motion.matches) return;
       try {
+        // Prepare a rendered inline element before Safari starts its media clock.
+        artwork.hidden = false;
         const playback = artwork.play();
         if (playback) void playback.catch(showStill);
       } catch {
@@ -75,9 +77,12 @@
   artwork.playsInline = true;
   artwork.playbackRate = 1;
   artwork.preload = 'auto';
-  for (const source of artwork.querySelectorAll('source')) {
-    source.src = dark() ? source.dataset.darkSrc : source.dataset.lightSrc;
-  }
+  // A failed HEVC stream must retain the still, not fall through to opaque VP9 in Safari.
+  const selected = [...artwork.querySelectorAll('source')].find((source) =>
+    artwork.canPlayType(source.type),
+  );
+  if (!selected) return;
+  artwork.src = dark() ? selected.dataset.darkSrc : selected.dataset.lightSrc;
   timer = window.setTimeout(showStill, 1800);
   artwork.load();
 })();

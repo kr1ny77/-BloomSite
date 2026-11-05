@@ -21,7 +21,16 @@ function openJourney() {
       else delete this.attributes[name];
     },
   });
-  const panels = Array.from({ length: 3 }, node);
+  const headings = Array.from({ length: 3 }, () => ({
+    ...node(),
+    focus() {
+      this.focused = true;
+    },
+  }));
+  const panels = headings.map((heading) => ({
+    ...node(),
+    querySelector: () => heading,
+  }));
   const buttons = Array.from({ length: 3 }, () => ({
     ...node(),
     addEventListener(_event, callback) {
@@ -53,6 +62,8 @@ function openJourney() {
   return {
     journey,
     panels,
+    headings,
+    open: (index) => listeners['bloom:journeyopen']({ detail: { index } }),
     buttons,
     controls,
     requests,
@@ -117,4 +128,15 @@ test('out-of-range step events cannot hide all scenes or corrupt accessible sele
     page.scroll(invalid);
     expectActive(page, 1);
   }
+});
+
+test('barcode requests composition through the shared selection and focus path', () => {
+  const p = openJourney();
+  p.open(1);
+  expectActive(p, 1);
+  assert.equal(p.headings[1].focused, true);
+  assert.equal(p.headings[1].attributes.tabindex, '-1');
+  assert.equal(p.requests.at(-1).detail.index, 1);
+  p.open(-1);
+  expectActive(p, 1);
 });

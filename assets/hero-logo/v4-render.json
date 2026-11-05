@@ -1,0 +1,22 @@
+{
+  "light": {
+    "frames_rendered": 116,
+    "hold_until": 300,
+    "fps": 60,
+    "final_matrices_identical": true,
+    "seconds": 79.35274410247803,
+    "leaf_start": 0.2,
+    "leaf_opaque": 0.68,
+    "leaf_settled": 1.2
+  },
+  "dark": {
+    "frames_rendered": 116,
+    "hold_until": 300,
+    "fps": 60,
+    "final_matrices_identical": true,
+    "seconds": 86.50723075866699,
+    "leaf_start": 0.2,
+    "leaf_opaque": 0.68,
+    "leaf_settled": 1.2
+  }
+}

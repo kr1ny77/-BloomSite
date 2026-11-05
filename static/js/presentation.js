@@ -22,14 +22,26 @@
   select(0);
   journey.setAttribute('data-enhanced', '');
   controls.hidden = false;
+  const request = (index, instant = false, focus = false) => {
+    if (!Number.isInteger(index) || index < 0 || index >= panels.length) return;
+    select(index, instant);
+    journey.dispatchEvent(
+      new CustomEvent('bloom:journeyrequest', { detail: { index } }),
+    );
+    if (focus) {
+      const heading = panels[index].querySelector('h3');
+      heading.setAttribute('tabindex', '-1');
+      heading.focus({ preventScroll: true });
+    }
+  };
   buttons.forEach((button, index) => {
-    button.addEventListener('click', (event) => {
-      select(index, event.detail === 0);
-      journey.dispatchEvent(
-        new CustomEvent('bloom:journeyrequest', { detail: { index } }),
-      );
-    });
+    button.addEventListener('click', (event) =>
+      request(index, event.detail === 0),
+    );
   });
+  journey.addEventListener('bloom:journeyopen', (event) =>
+    request(event.detail.index, false, true),
+  );
   journey.addEventListener('bloom:journeystep', (event) => {
     if (journey.dataset.step !== String(event.detail.index))
       select(event.detail.index);

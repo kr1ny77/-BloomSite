@@ -2,9 +2,10 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { createOrientationController } from './product-orientation.js';
+import { barcodeAnchor, isBarcodeUV } from './product-barcode.js';
 
 // The controller renders only visible motion or a direct interaction.
-export async function mount(host) {
+export async function mount(host, { onBarcode = () => {} } = {}) {
   let renderer, scene, environment, pmrem, room, observer, canvas, light;
   let disposed = false;
   const onContextLoss = (event) => {
@@ -15,6 +16,7 @@ export async function mount(host) {
   const dispose = () => {
     if (disposed) return;
     disposed = true;
+    onBarcode({ visible: false });
     observer?.disconnect();
     canvas?.removeEventListener('webglcontextlost', onContextLoss);
     const resources = new Set();
@@ -94,7 +96,44 @@ export async function mount(host) {
     canvas = renderer.domElement;
     canvas.setAttribute('aria-hidden', 'true');
     host.append(canvas);
-    const render = () => renderer.render(scene, camera);
+    const wrap = meshes.find((mesh) => mesh.name === 'Printed_wrap');
+    const anchor = wrap && barcodeAnchor(wrap.geometry);
+    const raycaster = new THREE.Raycaster();
+    const point = new THREE.Vector2();
+    const world = new THREE.Vector3(),
+      normal = new THREE.Vector3();
+    const projected = new THREE.Vector3(),
+      towardCamera = new THREE.Vector3();
+    let barcodeVisible = false;
+    const updateBarcode = () => {
+      barcodeVisible = false;
+      if (anchor) {
+        world.copy(anchor.point).applyMatrix4(wrap.matrixWorld);
+        normal.copy(anchor.normal).transformDirection(wrap.matrixWorld);
+        camera.getWorldDirection(towardCamera).negate();
+        projected.copy(world).project(camera);
+        if (
+          normal.dot(towardCamera) > 0.45 &&
+          Math.abs(projected.x) < 0.95 &&
+          Math.abs(projected.y) < 0.95 &&
+          Math.abs(projected.z) <= 1
+        ) {
+          raycaster.setFromCamera(point.set(projected.x, projected.y), camera);
+          const hit = raycaster.intersectObjects(meshes, false)[0];
+          barcodeVisible =
+            hit?.object === wrap && hit.point.distanceTo(world) < 0.025;
+        }
+      }
+      onBarcode({
+        visible: barcodeVisible,
+        x: ((projected.x + 1) * host.clientWidth) / 2,
+        y: ((1 - projected.y) * host.clientHeight) / 2,
+      });
+    };
+    const render = () => {
+      renderer.render(scene, camera);
+      updateBarcode();
+    };
     const resize = () => {
       const { width, height } = host.getBoundingClientRect();
       if (!width || !height) return;
@@ -108,18 +147,24 @@ export async function mount(host) {
     observer.observe(host);
     resize();
     canvas.addEventListener('webglcontextlost', onContextLoss);
-    const raycaster = new THREE.Raycaster();
-    const point = new THREE.Vector2();
+    const hitAt = (clientX, clientY) => {
+      const rect = canvas.getBoundingClientRect();
+      if (!rect.width || !rect.height) return false;
+      point.set(
+        ((clientX - rect.left) / rect.width) * 2 - 1,
+        1 - ((clientY - rect.top) / rect.height) * 2,
+      );
+      raycaster.setFromCamera(point, camera);
+      return raycaster.intersectObjects(meshes, false)[0];
+    };
     return {
       hitTest(clientX, clientY) {
-        const rect = canvas.getBoundingClientRect();
-        if (!rect.width || !rect.height) return false;
-        point.set(
-          ((clientX - rect.left) / rect.width) * 2 - 1,
-          1 - ((clientY - rect.top) / rect.height) * 2,
-        );
-        raycaster.setFromCamera(point, camera);
-        return raycaster.intersectObjects(meshes, false).length > 0;
+        return Boolean(hitAt(clientX, clientY));
+      },
+      hitBarcode(clientX, clientY) {
+        if (!barcodeVisible) return false;
+        const hit = hitAt(clientX, clientY);
+        return hit?.object === wrap && isBarcodeUV(hit.uv);
       },
       rotate(yaw, pitch = 0) {
         orientation.rotate(yaw, pitch);

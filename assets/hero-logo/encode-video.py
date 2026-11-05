@@ -11,12 +11,14 @@ import subprocess
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--light-frames', type=Path, required=True)
 parser.add_argument('--dark-frames', type=Path, required=True)
+parser.add_argument('--cropped-light', action='store_true')
+parser.add_argument('--version', default='v3', choices=['v3', 'v4'])
 args = parser.parse_args()
 output = Path(__file__).resolve().parents[2] / 'static/media/bloom-logo'
 for theme, frames in [('light', args.light_frames), ('dark', args.dark_frames)]:
     if not (frames / '0001.png').is_file():
         parser.error(f'Missing native frame sequence: {frames}')
-    crop = 'crop=1200:500:180:248,' if theme == 'light' else ''
+    crop = 'crop=1200:500:180:248,' if theme == 'light' and not args.cropped_light else ''
     filters = crop + 'tpad=stop_mode=clone:stop_duration=5,'
     common = ['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-threads', '2',
               '-framerate', '60', '-i', str(frames / '%04d.png')]
@@ -28,4 +30,4 @@ for theme, frames in [('light', args.light_frames), ('dark', args.dark_frames)]:
     ]:
         subprocess.run(common + ['-vf', filters + 'format=' + pixel_format,
                                  '-frames:v', '300', '-an'] + codec +
-                       [str(output / f'intro-v3-{theme}-60.{extension}')], check=True)
+                       [str(output / f'intro-{args.version}-{theme}-60.{extension}')], check=True)

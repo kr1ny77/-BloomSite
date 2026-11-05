@@ -3,15 +3,15 @@
   "files": [
     {
       "file": "index.html",
-      "sha": "210d19b34157ba9d89f4bcb9e79df14e7c5d5eba",
-      "sha256": "ba42b7623fb58fd66deabbf418a767d680ed8f2ccc35b695c6c340a33a417514",
-      "size": 32121
+      "sha": "1a1524c6a0d378158ff523af90bc82f0a8ec3f08",
+      "sha256": "c036041898402bb2cce596892830537ac4f7036027c8c242a8e16105a44e36c7",
+      "size": 32407
     },
     {
       "file": "static/css/style.css",
-      "sha": "236a45cd581be1b6c1b38c071199bdb2490eff8e",
-      "sha256": "f9e771dba2e8d4c350561071b8a31a000e8daa634e30da14c6245ff016a8058b",
-      "size": 35583
+      "sha": "b842e85e53964976254514a6e8e072a9a676704f",
+      "sha256": "b3b03426a6f88e5ed4c757826a67ebac2e174a1106c03dd3a0d1c459d687423a",
+      "size": 36573
     },
     {
       "file": "static/fonts/OFL.txt",
@@ -459,9 +459,9 @@
     },
     {
       "file": "static/js/intro.js",
-      "sha": "4dd6943db9891a6b663c00d94873d9ed9e65f4c6",
-      "sha256": "ff61f397d42a88a748b679cb19d7cd7bdc783ba759713481327fc7b66bbce533",
-      "size": 2729
+      "sha": "e0a9be131ee79365fdc56086035b6c140e79c47e",
+      "sha256": "ec5f9f17866a0d694769c5e74841877016f4e52fa04aff812bcfb9318d07f694",
+      "size": 3064
     },
     {
       "file": "static/js/lenis.min.js",
@@ -483,21 +483,21 @@
     },
     {
       "file": "static/js/presentation.js",
-      "sha": "ed00bf14701e131979713ecb42b2c896b952114a",
-      "sha256": "f00926c1a3f3c21441d144292cd6f36442a8820aa28739dc8452969ce6fc92b2",
-      "size": 1403
+      "sha": "91dabf25e10c65406608c0b8b5197c0e800a270b",
+      "sha256": "5474eed5a8f28ceac6d57539362b0f637b0582337c73e12b9da1a8e8df3f7e13",
+      "size": 1854
     },
     {
       "file": "static/js/product-viewer.js",
-      "sha": "b422a8986092265a68dd4110c414d536ef3b0eec",
-      "sha256": "c7868e0cf1aa6c90d25f8717b1253c8aaff6091b788068b4f6c2fb038e5121f9",
-      "size": 628864
+      "sha": "21ac90946adc352b642266e816c4c1f8813aa914",
+      "sha256": "9ea5d397cf43ae8464177f7443b96f891026978b5d83095cd14a467ac733688a",
+      "size": 630222
     },
     {
       "file": "static/js/product.js",
-      "sha": "2d58f3ae5d65bcabde054681cbe323a425e26f8e",
-      "sha256": "2f8309dffc401ec1fbc7e46cd86a01bc59ba3d35f490ab8733eee61ca73983f0",
-      "size": 11481
+      "sha": "d60a2eef59872ea8f32548736b93a8d41e18c8b4",
+      "sha256": "d16c046cae11a54a03c746648d1c70b427c3c51f4caa4707ea8956966eaf4bcc",
+      "size": 12839
     },
     {
       "file": "static/js/scanner.js",
@@ -558,6 +558,30 @@
       "sha": "9a419a156e82b8a4edcf1166503697decb459764",
       "sha256": "6d637422ab3afe23e7f7ee8a9236313536a7739e265ffd5150cc2e2ff07c4733",
       "size": 1921608
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v4-dark-60.mov",
+      "sha": "0026d84e2f1bd22b46ce34a514b6ce852ee45613",
+      "sha256": "46c6521fa3bf04d381e61f25a9a63a3eb81971d236d3a19440f86237336dc208",
+      "size": 2007428
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v4-dark-60.webm",
+      "sha": "f7bd36b874a4df21c43e5440f9a7fc63208c8b30",
+      "sha256": "87c59ba357bfc119038250e30016cd15e4b7a2ebd897912c13b9a9c91c6d841b",
+      "size": 967394
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v4-light-60.mov",
+      "sha": "16e08895d67096959538e518ed666703381888aa",
+      "sha256": "f363aa9e92c3f779204125f9760cb9922b70c3fcae0f4f6d9d9c7098b09e8dd3",
+      "size": 1862958
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v4-light-60.webm",
+      "sha": "5b5f768a407af2777ab33eb9122d9fdf9f7c353b",
+      "sha256": "cd72f19942ad4afa828161ac709f928bc29cc1172184f91ea287ad08ec20a30b",
+      "size": 681362
     },
     {
       "file": "static/media/bloom-logo/static-dark.webp",

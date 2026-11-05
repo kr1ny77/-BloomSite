@@ -5,7 +5,7 @@ import { test } from 'node:test';
 const source = readFileSync(
   new URL('../static/js/product.js', import.meta.url),
   'utf8',
-).replace("import('/static/js/product-viewer.js?v=return1')", 'loadViewer()');
+).replace("import('/static/js/product-viewer.js?v=barcode1')", 'loadViewer()');
 const flush = async () => {
   for (let i = 0; i < 8; i++) await Promise.resolve();
 };
@@ -32,7 +32,14 @@ function page({ reduced = false, fail = false, pending = false } = {}) {
     panel = node(),
     error = node(),
     document = node(),
-    window = node();
+    window = node(),
+    hotspot = node(),
+    journey = node();
+  const requests = [];
+  hotspot.style = {};
+  hotspot.contains = (target) => target === hotspot;
+  host.querySelector = () => hotspot;
+  journey.dispatchEvent = (event) => requests.push(event);
   document.hidden = false;
   const captures = new Set(),
     frames = new Map(),
@@ -55,9 +62,11 @@ function page({ reduced = false, fail = false, pending = false } = {}) {
   document.querySelector = (key) =>
     key === '[data-package-viewer]'
       ? host
-      : key === '#site-menu'
-        ? menu
-        : panel;
+      : key === '[data-journey]'
+        ? journey
+        : key === '#site-menu'
+          ? menu
+          : panel;
   const media = {
     matches: reduced,
     addEventListener(_, fn) {
@@ -65,7 +74,9 @@ function page({ reduced = false, fail = false, pending = false } = {}) {
     },
   };
   window.matchMedia = () => media;
+  let onBarcode;
   const renderer = {
+    hitBarcode: () => false,
     reset: () => {
       resetCount++;
     },
@@ -78,6 +89,12 @@ function page({ reduced = false, fail = false, pending = false } = {}) {
   runInNewContext(source, {
     document,
     window,
+    CustomEvent: class {
+      constructor(type, init) {
+        this.type = type;
+        this.detail = init.detail;
+      }
+    },
     setTimeout: (fn) => {
       timers.set(++timerId, fn);
       return timerId;
@@ -104,7 +121,8 @@ function page({ reduced = false, fail = false, pending = false } = {}) {
       disconnect() {}
     },
     loadViewer: async () => ({
-      mount: async () => {
+      mount: async (_host, options) => {
+        onBarcode = options.onBarcode;
         if (fail) throw new Error('WebGL unavailable');
         if (pending)
           return new Promise((resolve) => {
@@ -118,6 +136,9 @@ function page({ reduced = false, fail = false, pending = false } = {}) {
     target.listeners[name]?.({ ...event, type: name });
   return {
     host,
+    hotspot,
+    requests,
+    barcode: (state) => onBarcode(state),
     timers,
     returns,
     resets: () => resetCount,
@@ -472,4 +493,56 @@ test('hiding during a live drag parks home; cancellation after rotation schedule
   q.idle();
   for (let i = 0; i < 60; i++) q.step(i * 16);
   assert.equal(q.returns.at(-1), 1);
+});
+
+test('barcode projection exposes only a visible anchored target and the eye opens composition', async () => {
+  const p = page();
+  p.load();
+  await flush();
+  p.visible();
+  p.barcode({ visible: true, x: 125, y: 200 });
+  assert.equal(p.hotspot.hidden, false);
+  assert.equal(p.hotspot.style.left, '125px');
+  p.fire(p.hotspot, 'pointerdown');
+  assert.equal(p.frames.size, 0);
+  p.fire(p.hotspot, 'click');
+  assert.equal(p.requests.at(-1).type, 'bloom:journeyopen');
+  assert.equal(p.requests.at(-1).detail.index, 1);
+  p.barcode({ visible: false });
+  assert.equal(p.hotspot.hidden, true);
+  p.panel.setAttribute('inert', '');
+  p.fire(p.hotspot, 'click');
+  assert.equal(
+    p.requests.length,
+    1,
+    'inactive scenes cannot activate a stale target',
+  );
+});
+test('a tap on the printed barcode opens composition but a drag across it never does', async () => {
+  for (const pointerType of ['mouse', 'touch']) {
+    const p = page();
+    p.load();
+    await flush();
+    p.visible();
+    p.renderer.hitBarcode = () => true;
+    const down = {
+      isPrimary: true,
+      button: 0,
+      pointerId: 1,
+      pointerType,
+      clientX: 100,
+      clientY: 100,
+      timeStamp: 0,
+    };
+    p.fire(p.host, 'pointerdown', down);
+    p.fire(p.host, 'pointerup', { ...down, timeStamp: 50 });
+    assert.equal(p.requests.length, 1);
+    p.fire(p.host, 'pointerdown', down);
+    p.fire(p.host, 'pointermove', { ...down, clientX: 120, timeStamp: 30 });
+    p.fire(p.host, 'pointerup', { ...down, clientX: 120, timeStamp: 60 });
+    assert.equal(p.requests.length, 1);
+    p.fire(p.host, 'pointerdown', down);
+    p.fire(p.host, 'pointercancel', { ...down, timeStamp: 90 });
+    assert.equal(p.requests.length, 1);
+  }
 });

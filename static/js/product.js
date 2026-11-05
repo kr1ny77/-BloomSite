@@ -5,6 +5,21 @@
   const panel = document.querySelector('#journey-package');
   const menu = document.querySelector('#site-menu');
   const errorMessage = panel.querySelector('[data-viewer-error]');
+  const hotspot = host.querySelector('[data-barcode-hotspot]');
+  const journey = document.querySelector('[data-journey]');
+  const openComposition = () => {
+    if (!active()) return;
+    journey.dispatchEvent(
+      new CustomEvent('bloom:journeyopen', { detail: { index: 1 } }),
+    );
+  };
+  const positionBarcode = ({ visible, x, y }) => {
+    hotspot.hidden = !visible;
+    if (visible) {
+      hotspot.style.left = `${x}px`;
+      hotspot.style.top = `${y}px`;
+    }
+  };
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
   let viewer,
     loading,
@@ -151,6 +166,7 @@
     host.removeAttribute('tabindex');
     host.removeAttribute('role');
     host.removeAttribute('aria-label');
+    hotspot.hidden = true;
     errorMessage.hidden = false;
     console.error('Bloom 3D unavailable:', error);
   };
@@ -158,8 +174,10 @@
     if (loading || disposed) return;
     loading = true;
     try {
-      const engine = await import('/static/js/product-viewer.js?v=return1');
-      const candidate = await engine.mount(host);
+      const engine = await import('/static/js/product-viewer.js?v=barcode1');
+      const candidate = await engine.mount(host, {
+        onBarcode: positionBarcode,
+      });
       if (disposed) {
         candidate.dispose();
         return;
@@ -266,6 +284,8 @@
     if (
       !viewer ||
       panel.hasAttribute('inert') ||
+      event.target === hotspot ||
+      hotspot.contains(event.target) ||
       !event.isPrimary ||
       event.button !== 0 ||
       pointer ||
@@ -312,7 +332,16 @@
   const release = (event) => {
     if (!pointer || pointer.id !== event.pointerId) return;
     const old = pointer;
+    const barcodeTap =
+      event.type === 'pointerup' &&
+      !old.dragging &&
+      Math.hypot(event.clientX - old.startX, event.clientY - old.startY) < 6 &&
+      viewer?.hitBarcode(event.clientX, event.clientY);
     cancelDrag();
+    if (barcodeTap) {
+      openComposition();
+      return;
+    }
     if (
       event.type === 'pointerup' &&
       event.timeStamp - old.time <= 100 &&
@@ -334,7 +363,8 @@
   host.addEventListener('pointercancel', release);
   host.addEventListener('lostpointercapture', release);
   host.addEventListener('keydown', (event) => {
-    if (!viewer || panel.hasAttribute('inert')) return;
+    if (!viewer || panel.hasAttribute('inert') || event.target === hotspot)
+      return;
     if (
       ![
         'ArrowLeft',
@@ -373,6 +403,24 @@
     }
     paint();
   });
+  hotspot.addEventListener('pointerdown', () => {
+    cancelHome();
+    stop();
+  });
+  hotspot.addEventListener('pointerenter', () => {
+    cancelHome();
+    stop();
+  });
+  hotspot.addEventListener('focus', () => {
+    focused = true;
+    cancelHome();
+    stop();
+  });
+  hotspot.addEventListener('blur', () => {
+    focused = false;
+    resume();
+  });
+  hotspot.addEventListener('click', openComposition);
   reduce.addEventListener('change', () => {
     park();
     resume();

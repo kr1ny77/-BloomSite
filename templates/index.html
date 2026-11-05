@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,11 +38,11 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="/static/css/style.css?v=hero-v2" />
-    <script defer src="/static/js/intro.js?v=video60-1"></script>
+    <link rel="stylesheet" href="/static/css/style.css?v=barcode1" />
+    <script defer src="/static/js/intro.js?v=video60-2"></script>
     <script defer src="/static/js/app.js?v=interaction3"></script>
-    <script defer src="/static/js/presentation.js?v=5"></script>
-    <script defer src="/static/js/product.js?v=return1"></script>
+    <script defer src="/static/js/presentation.js?v=barcode1"></script>
+    <script defer src="/static/js/product.js?v=barcode1"></script>
     <script defer src="/static/js/scanner.js"></script>
     <script defer src="/static/js/menu-preview.js?v=3"></script>
     <script defer src="/static/js/motion.js?v=interaction3"></script>
@@ -366,7 +366,7 @@
             <picture class="wordmark" aria-hidden="true">
               <source
                 class="wordmark-dark-source"
-                media="(prefers-color-scheme: dark)"
+                media="not all"
                 srcset="/static/media/bloom-logo/static-v3-dark.webp"
               />
               <img
@@ -383,20 +383,21 @@
               height="500"
               muted
               playsinline
+              webkit-playsinline
               preload="none"
               disablepictureinpicture
               aria-hidden="true"
               hidden
             >
               <source
-                type="video/quicktime; codecs=hvc1"
-                data-light-src="/static/media/bloom-logo/intro-v3-light-60.mov"
-                data-dark-src="/static/media/bloom-logo/intro-v3-dark-60.mov"
+                type="video/quicktime; codecs=hvc1.1.6.L93.B0"
+                data-light-src="/static/media/bloom-logo/intro-v4-light-60.mov"
+                data-dark-src="/static/media/bloom-logo/intro-v4-dark-60.mov"
               />
               <source
                 type="video/webm; codecs=vp9"
-                data-light-src="/static/media/bloom-logo/intro-v3-light-60.webm"
-                data-dark-src="/static/media/bloom-logo/intro-v3-dark-60.webm"
+                data-light-src="/static/media/bloom-logo/intro-v4-light-60.webm"
+                data-dark-src="/static/media/bloom-logo/intro-v4-dark-60.webm"
               />
             </video>
           </div>
@@ -560,6 +561,21 @@
                         loading="lazy"
                         alt="Демонстрационный йогурт с русской этикеткой, фольгой и указанием 3,2 процента жирности"
                       />
+                      <button
+                        class="barcode-hotspot"
+                        data-barcode-hotspot
+                        type="button"
+                        aria-label="Посмотреть состав продукта"
+                        aria-controls="journey-composition"
+                        hidden
+                      >
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                          <path
+                            d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"
+                          />
+                          <circle cx="12" cy="12" r="2.5" />
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -697,36 +713,20 @@
       >
         <div class="shell closing-inner">
           <div class="closing-brand" role="img" aria-label="Bloom">
-            <svg
-              class="closing-wordmark"
-              aria-hidden="true"
-              viewBox="0 0 1080 390"
-              fill="none"
-            >
-              <g
-                stroke="currentColor"
-                stroke-width="43"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M60 105v160" />
-                <circle cx="130" cy="265" r="70" />
-                <path d="M260 105v230" />
-                <circle cx="392" cy="265" r="70" />
-                <circle cx="579" cy="265" r="70" />
-                <path
-                  d="M711 335v-86c0-80 104-80 104 0v86m0-86c0-80 104-80 104 0v86"
-                />
-              </g>
-            </svg>
-            <img
-              class="closing-leaf"
-              src="/static/images/bloom-mark-320.webp"
-              width="320"
-              height="320"
-              loading="lazy"
-              alt=""
-            />
+            <picture class="closing-wordmark" aria-hidden="true">
+              <source
+                class="wordmark-dark-source"
+                media="not all"
+                srcset="/static/media/bloom-logo/static-v3-dark.webp"
+              />
+              <img
+                src="/static/media/bloom-logo/static-v3-light.webp"
+                width="1200"
+                height="500"
+                loading="lazy"
+                alt=""
+              />
+            </picture>
           </div>
           <div class="closing-copy">
             <h2 id="closing-title">Больше ясности<br />в каждом выборе.</h2>
