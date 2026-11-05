@@ -133,4 +133,4 @@ body {
   }
 }
 
-:root, .dark { --background: #08110e; --foreground: #f4f5ef; --primary: #d6ed9d; --primary-foreground: #08110e; --accent: #d6ed9d; --accent-foreground: #08110e; --muted-foreground: #aab7af; --border: #56635b; }
+:root, .dark { --background: #06110D; --foreground: #F4F3ED; --primary: #C7EB72; --primary-foreground: #06110D; --accent: #C7EB72; --accent-foreground: #06110D; --muted-foreground: #aab7af; --border: #56635b; }

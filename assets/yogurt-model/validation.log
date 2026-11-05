@@ -1,0 +1,17 @@
+17:05:49 | INFO: Data are loaded, start creating Blender stuff
+17:05:49 | INFO: Blender create Mesh node Cup molded shell
+17:05:49 | INFO: Blender create Mesh node Foil crimped perimeter
+17:05:49 | INFO: Blender create Mesh node Pull tab
+17:05:49 | INFO: Blender create Mesh node Sphere
+17:05:49 | INFO: Blender create Mesh node Molded lower foot
+17:05:49 | INFO: Blender create Mesh node Printed seal face
+17:05:49 | INFO: Blender create Mesh node Printed wrap
+17:05:49 | INFO: Blender create Mesh node Rolled lip bead
+17:05:49 | INFO: glTF import finished in 0.04s
+/Users/kr1ny77/Desktop/Bloom/bloom-site/assets/yogurt-model/validate-model.py:16: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.render.film_transparent=True;scene.render.image_settings.file_format='PNG';scene.world=bpy.data.worlds.new('Validation studio');scene.world.use_nodes=True
+00:03.194  render           | Saved: '/Users/kr1ny77/Desktop/Bloom/bloom-site/assets/yogurt-model/import-front.png'
+00:05.625  render           | Saved: '/Users/kr1ny77/Desktop/Bloom/bloom-site/assets/yogurt-model/import-reverse.png'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

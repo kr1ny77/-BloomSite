@@ -1,0 +1,121 @@
+[
+  {
+    "name": "calendar",
+    "appId": 1108185179,
+    "title": "Calendar",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/calendar/id1108185179?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/5a/cd/ca5acd85-c64d-f468-00f9-50fdc4819e59/calendarCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "weather",
+    "appId": 1069513131,
+    "title": "Weather",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/weather/id1069513131?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/66/d6/cf/66d6cf2c-91a7-6c10-8bd6-54b2dc7b558e/weatherCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "shortcuts",
+    "appId": 915249334,
+    "title": "Shortcuts",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/shortcuts/id915249334?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/3e/52/07/3e520776-0908-893c-2248-6c9d29a03cc7/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/512x512bb.jpg"
+  },
+  {
+    "name": "clock",
+    "appId": 1584215688,
+    "title": "Clock",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/clock/id1584215688?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c0/8e/d2/c08ed244-21b1-9bce-7199-2417712ae123/clockCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "notes",
+    "appId": 1110145109,
+    "title": "Notes",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/notes/id1110145109?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/53/65/e853659a-0888-7264-743e-0e3875d1505f/notesCalistoga-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "maps",
+    "appId": 915056765,
+    "title": "Apple Maps",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/apple-maps/id915056765?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/53/2e/98532ed4-879d-02f7-5021-84082f28593e/mapsCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "music",
+    "appId": 1108187390,
+    "title": "Apple Music",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/apple-music/id1108187390?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/45/38/d5453893-7719-0067-ed45-1de44d0d8eb9/musicValkyrie-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+    "selectedVariant": {
+      "name": "Classic red background / white note, selected by user",
+      "source": "https://commons.wikimedia.org/wiki/File:Apple_Music_icon.svg",
+      "artwork": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Apple_Music_icon.svg",
+      "credit": "Apple Inc.; original source Apple Music site, 2020; Commons PD-textlogo + trademark notice",
+      "runtime": "static/images/ios-apps/music-classic.svg"
+    }
+  },
+  {
+    "name": "books",
+    "appId": 364709193,
+    "title": "Apple Books",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/apple-books/id364709193?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/33/db/5833dbdb-b7fd-4638-f028-dec268a4ab8b/booksCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "files",
+    "appId": 1232058109,
+    "title": "Files",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/files/id1232058109?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/df/6a/35df6a7a-b5e0-9221-4a90-1dee835fe6ca/filesCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "mail",
+    "appId": 1108187098,
+    "title": "Mail",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/mail/id1108187098?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6e/20/b2/6e20b217-8f80-9b20-136f-50ee09e2937c/mailCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "podcasts",
+    "appId": 525463029,
+    "title": "Apple Podcasts",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/apple-podcasts/id525463029?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/0a/f3/e80af3fc-6a6b-35c6-1931-272745ed02e7/podcastsCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "phone",
+    "appId": 1146562108,
+    "title": "Phone",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/phone/id1146562108?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a3/68/84/a36884f9-3c1d-7424-aa64-eb9523b99c33/phoneCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "messages",
+    "appId": 1146560473,
+    "title": "Messages",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/messages/id1146560473?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fc/8d/32/fc8d32a0-86a7-83d8-7045-57b4b3e71a0b/messagesCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  },
+  {
+    "name": "safari",
+    "appId": 1146562112,
+    "title": "Safari",
+    "publisher": "Apple",
+    "source": "https://apps.apple.com/us/app/safari/id1146562112?uo=4",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9b/4a/12/9b4a12c2-7ea9-9e38-4d4f-f1342b310519/safariCalistoga-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg"
+  }
+]

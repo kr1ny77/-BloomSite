@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "purpose": "Replacement website first-viewport composition",
+  "source": "Native image generation, exec-7396e2de-5850-430a-a966-04d8f9d5d62a.png",
+  "constraints": ["Preserve original Bloom logo rather than generated leaf symbol", "Use static app examples", "Keep store buttons as placeholders", "Use confirmed four-color palette"],
+  "status": "Approved by user: все хорошо, продолжай дальше без aprrove, сделай сайт до конца"
+}

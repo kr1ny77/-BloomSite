@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#06110D" />
+    <meta
+      name="description"
+      content="Bloom: будущее приложение для понимания состава и пищевой ценности продуктов. Понятные объяснения на основе доступных данных и источников."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="Bloom | Знайте, что выбираете" />
+    <meta
+      property="og:description"
+      content="Будущее приложение, которое помогает понимать состав, пищевую ценность и основания вывода о продукте."
+    />
+    <meta property="og:image" content="/static/images/bloom-social.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Bloom. Знайте, что выбираете. Оригинальная зелёная эмблема на лесном фоне."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Bloom | Знайте, что выбираете</title>
+    <link rel="icon" href="/static/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/static/images/favicon.png" />
+    <link
+      rel="preload"
+      href="/static/fonts/onest-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="/static/images/bloom-wordmark-final.webp?v=2" as="image" />
+    <link rel="stylesheet" href="/static/css/style.css?v=26" />
+    <script defer src="/static/js/intro.js?v=1"></script>
+    <script defer src="/static/js/app.js?v=18"></script>
+    <script defer src="/static/js/presentation.js?v=3"></script>
+    <script defer src="/static/js/chapter-stop.js?v=3"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="topbar">
+      <div class="shell nav">
+        <a class="brand" href="#hero" aria-label="Bloom: начало"
+          ><img
+            src="/static/images/bloom-mark.webp"
+            width="30"
+            height="30"
+            alt=""
+          />Bloom</a
+        >
+        <nav aria-label="Разделы сайта">
+          <a href="#about">О составе</a><a href="#app">Приложение</a
+          ><a href="#trust">Источники</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" id="hero" data-slide aria-labelledby="hero-title">
+        <div class="hero-art" aria-hidden="true"><img src="/static/images/hero-apple.webp" width="1536" height="1024" fetchpriority="high" alt="" /></div>
+        <div class="shell hero-inner">
+          <div class="wordmark" role="img" aria-label="Bloom">
+            <img class="wordmark-still" src="/static/images/bloom-wordmark-final.webp?v=2"
+              width="1320" height="800" alt="" fetchpriority="high" />
+            <video class="wordmark-video" width="1320" height="800" muted playsinline
+              preload="none" poster="/static/images/bloom-wordmark-first.webp?v=2"
+              data-src="/static/media/bloom-intro.mp4" aria-hidden="true" hidden></video>
+          </div>
+          <div class="hero-copy">
+            <h1 id="hero-title">Знайте, что<br />выбираете.</h1>
+            <p>
+              Bloom поможет понять состав и пищевую ценность продуктов. Приложение в разработке.
+            </p>
+            <a class="text-link" href="#how">Как устроен Bloom</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="context" id="about" aria-labelledby="about-title">
+        <div class="scene-chapter-position">
+          <nav class="scene-chapters" aria-label="Фотоглавы Bloom">
+            <a href="#about">Упаковка</a><a href="#inside">Внутри</a>
+          </nav>
+        </div>
+        <article class="context-story context-story-shopping" data-slide>
+
+          <figure class="context-visual">
+            <img class="context-story-image" src="/static/images/context-shopping.webp"
+              width="1536" height="1024" loading="lazy"
+              alt="Покупатель изучает упаковку йогурта в магазине" />
+          </figure>
+          <div class="shell context-scene-content">
+            <div class="context-copy">
+              <h2 id="about-title">Знакомая упаковка.<br />Что внутри?</h2>
+              <p>Ингредиенты, цифры, обещания.<br />При покупке хочется понимать,<br class="desktop-break" /> что стоит за ними.</p>
+            </div>
+          </div>
+        </article>
+        <article class="context-story context-story-detail" data-slide id="inside" aria-labelledby="inside-title">
+
+          <figure class="context-visual">
+            <img class="context-story-image" src="/static/images/context-packaged-wide.webp"
+              width="1536" height="1024" loading="lazy"
+              alt="Небольшая закрытая упаковка йогурта с этикеткой на кухонном столе" />
+          </figure>
+          <div class="shell context-scene-content">
+            <div class="context-copy">
+              <h3 id="inside-title">Внутри<br />больше.</h3>
+              <p>Состав, пищевая ценность, источники.<br />Bloom поможет связать их с вашим выбором.</p>
+              <dl class="context-facts">
+                <div><dt>Состав</dt><dd>Что входит в продукт</dd></div>
+                <div><dt>Пищевая ценность</dt><dd>Белки, жиры и углеводы на 100 г</dd></div>
+                <div><dt>Источники</dt><dd>На чём основано объяснение</dd></div>
+              </dl>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="method shell" id="how" data-slide aria-labelledby="how-title">
+        <div class="method-heading">
+          <h2 id="how-title">От продукта к пониманию.</h2>
+          <p class="section-intro">
+            Три действия, которые помогут разобраться в продукте. Так мы видим путь в будущем приложении.
+          </p>
+
+        </div>
+        <ol class="method-list">
+          <li>
+            <h3>Найти продукт</h3>
+            <p>
+              Сканирование упаковки или поиск откроют карточку продукта в
+              будущем приложении.
+            </p>
+          </li>
+          <li>
+            <h3>Разобраться в составе</h3>
+            <p>
+              Ингредиенты и пищевая ценность соберутся в одном месте. Доступные
+              показатели исследований дополнят картину.
+            </p>
+          </li>
+          <li>
+            <h3>Понять вывод</h3>
+            <p>
+              Объяснение свяжет результат с исходными данными. Рядом будут
+              основания и доступные источники.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="app" id="app" data-slide aria-labelledby="app-title">
+        <div class="shell app-layout">
+        <div class="app-narrative">
+        <div class="app-heading">
+          <h2 id="app-title">За оценкой<br />виден состав.</h2>
+          <p class="section-intro">
+            Ингредиенты, пищевая ценность на 100 г и доступные сведения помогут
+            увидеть продукт целиком.
+          </p>
+          <p class="app-disclosure">
+            Демонстрационные данные: оценки и показатели показаны для примера.
+          </p>
+        </div>
+        <div class="app-presentation-controls" hidden>
+          <div class="app-focus-switch" role="group" aria-label="Выделить демонстрационный экран">
+            <button type="button" data-screen="result" aria-pressed="true">Результат</button>
+            <button type="button" data-screen="composition" aria-pressed="false">Состав и данные</button>
+          </div>
+          <p class="app-focus-description" aria-live="polite">Общий результат: отправная точка. Дальше можно изучить показатели.</p>
+        </div>
+        </div>
+        <div class="app-stage">
+          <figure class="screen screen-result">
+            <img
+              src="/static/images/result-phone.webp"
+              width="421"
+              height="840"
+              loading="lazy"
+              alt="Демонстрационный экран результата: йогурт, оценка 92 из 100 и пример показателей исследования"
+            />
+          </figure>
+          <figure class="screen screen-composition">
+            <img
+              src="/static/images/composition-phone.webp"
+              width="423"
+              height="840"
+              loading="lazy"
+              alt="Демонстрационный экран состава и пищевой ценности йогурта с переходом к источникам"
+            />
+          </figure>
+        </div>
+        </div>
+        <p class="shell app-footnote">
+          Методика оценки находится в разработке. Демонстрационный рейтинг
+          иллюстрирует будущий интерфейс.
+        </p>
+      </section>
+
+      <section class="trust shell" id="trust" data-slide aria-labelledby="trust-title">
+        <div class="trust-heading">
+        <h2 id="trust-title">У каждого вывода<br />своё основание.</h2>
+        <p class="section-intro">
+          Bloom планирует показывать, откуда взяты сведения и как они связаны с
+          результатом.
+        </p>
+        </div>
+        <div class="evidence-chain">
+          <details open>
+            <summary>Состав</summary>
+            <p>Ингредиенты и пищевая ценность из информации о продукте. Это отправная точка объяснения.</p>
+          </details>
+          <details>
+            <summary>Исследование</summary>
+            <p>Доступные измерения с указанием конкретного образца и даты. Результат относится к исследованному образцу.</p>
+          </details>
+          <details>
+            <summary>Источник</summary>
+            <p>Применимый норматив или протокол, по которому можно проверить основание вывода.</p>
+          </details>
+        </div>
+        <div class="data-boundary">
+          <p>Данных недостаточно</p>
+          <div>
+            <p>Такой статус тоже часть понятного результата.</p>
+            <span
+              >При нехватке сведений Bloom покажет, что ещё требуется для
+              вывода. Результат исследования относится к конкретному
+              образцу.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" id="closing" data-slide aria-labelledby="closing-title">
+        <div class="shell closing-inner">
+          <div class="closing-brand" aria-hidden="true">
+            <img
+              src="/static/images/bloom-mark.webp"
+              width="96"
+              height="96"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <h2 id="closing-title">Больше ясности<br />в каждом выборе.</h2>
+          <p>Понятные факты о продуктах.<br />Будущее приложение Bloom.</p>
+          <!-- Replace each button with an anchor and a verified href when the app is published. -->
+          <div class="stores" aria-label="Приложение в разработке">
+            <button
+              class="store"
+              type="button"
+              aria-disabled="true"
+              data-store="app-store"
+            >
+              <img
+                class="store-icon"
+                src="/static/images/store-apple.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>App Store</span><small>Скоро</small>
+            </button>
+            <button
+              class="store"
+              type="button"
+              aria-disabled="true"
+              data-store="google-play"
+            >
+              <img
+                class="store-icon"
+                src="/static/images/store-google-play.svg"
+                width="24"
+                height="24"
+                alt=""
+                aria-hidden="true"
+              />
+              <span>Google Play</span><small>Скоро</small>
+            </button>
+          </div>
+          <footer>
+            <a class="brand" href="#hero" aria-label="Bloom: к началу">Bloom</a
+            ><span>Знайте, что выбираете.</span
+            ><span>Приложение в разработке</span>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

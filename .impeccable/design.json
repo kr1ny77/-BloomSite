@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-17T18:56:02.069Z",
+  "title": "Design System: Bloom",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "displayName": "Deep near-black green",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0190 169.85)",
+          "oklch(26.43% 0.0190 169.85)",
+          "oklch(37.86% 0.0190 169.85)",
+          "oklch(49.29% 0.0190 169.85)",
+          "oklch(60.71% 0.0190 169.85)",
+          "oklch(72.14% 0.0190 169.85)",
+          "oklch(83.57% 0.0190 169.85)",
+          "oklch(95.00% 0.0190 169.85)"
+        ]
+      },
+      "deep": {
+        "displayName": "Forest green",
+        "role": "secondary",
+        "tonalRamp": [
+          "oklch(15.00% 0.0580 166.56)",
+          "oklch(26.43% 0.0580 166.56)",
+          "oklch(37.86% 0.0580 166.56)",
+          "oklch(49.29% 0.0580 166.56)",
+          "oklch(60.71% 0.0580 166.56)",
+          "oklch(72.14% 0.0580 166.56)",
+          "oklch(83.57% 0.0580 166.56)",
+          "oklch(95.00% 0.0580 166.56)"
+        ]
+      },
+      "accent": {
+        "displayName": "Fresh lime",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15.00% 0.1535 123.25)",
+          "oklch(26.43% 0.1535 123.25)",
+          "oklch(37.86% 0.1535 123.25)",
+          "oklch(49.29% 0.1535 123.25)",
+          "oklch(60.71% 0.1535 123.25)",
+          "oklch(72.14% 0.1535 123.25)",
+          "oklch(83.57% 0.1535 123.25)",
+          "oklch(95.00% 0.1535 123.25)"
+        ]
+      },
+      "foreground": {
+        "displayName": "Warm off-white",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0080 98.88)",
+          "oklch(26.43% 0.0080 98.88)",
+          "oklch(37.86% 0.0080 98.88)",
+          "oklch(49.29% 0.0080 98.88)",
+          "oklch(60.71% 0.0080 98.88)",
+          "oklch(72.14% 0.0080 98.88)",
+          "oklch(83.57% 0.0080 98.88)",
+          "oklch(95.00% 0.0080 98.88)"
+        ]
+      },
+      "muted": {
+        "displayName": "Muted sage",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0183 158.98)",
+          "oklch(26.43% 0.0183 158.98)",
+          "oklch(37.86% 0.0183 158.98)",
+          "oklch(49.29% 0.0183 158.98)",
+          "oklch(60.71% 0.0183 158.98)",
+          "oklch(72.14% 0.0183 158.98)",
+          "oklch(83.57% 0.0183 158.98)",
+          "oklch(95.00% 0.0183 158.98)"
+        ]
+      },
+      "line": {
+        "displayName": "Green grey",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0204 158.56)",
+          "oklch(26.43% 0.0204 158.56)",
+          "oklch(37.86% 0.0204 158.56)",
+          "oklch(49.29% 0.0204 158.56)",
+          "oklch(60.71% 0.0204 158.56)",
+          "oklch(72.14% 0.0204 158.56)",
+          "oklch(83.57% 0.0204 158.56)",
+          "oklch(95.00% 0.0204 158.56)"
+        ]
+      },
+      "surface": {
+        "displayName": "Forest surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0272 161.37)",
+          "oklch(26.43% 0.0272 161.37)",
+          "oklch(37.86% 0.0272 161.37)",
+          "oklch(49.29% 0.0272 161.37)",
+          "oklch(60.71% 0.0272 161.37)",
+          "oklch(72.14% 0.0272 161.37)",
+          "oklch(83.57% 0.0272 161.37)",
+          "oklch(95.00% 0.0272 161.37)"
+        ]
+      },
+      "paper-line": {
+        "displayName": "Paper border",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0184 134.93)",
+          "oklch(26.43% 0.0184 134.93)",
+          "oklch(37.86% 0.0184 134.93)",
+          "oklch(49.29% 0.0184 134.93)",
+          "oklch(60.71% 0.0184 134.93)",
+          "oklch(72.14% 0.0184 134.93)",
+          "oklch(83.57% 0.0184 134.93)",
+          "oklch(95.00% 0.0184 134.93)"
+        ]
+      },
+      "trust-background": {
+        "displayName": "Trust background",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0211 161.96)",
+          "oklch(26.43% 0.0211 161.96)",
+          "oklch(37.86% 0.0211 161.96)",
+          "oklch(49.29% 0.0211 161.96)",
+          "oklch(60.71% 0.0211 161.96)",
+          "oklch(72.14% 0.0211 161.96)",
+          "oklch(83.57% 0.0211 161.96)",
+          "oklch(95.00% 0.0211 161.96)"
+        ]
+      },
+      "phone-screen": {
+        "displayName": "Phone screen",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0054 117.92)",
+          "oklch(26.43% 0.0054 117.92)",
+          "oklch(37.86% 0.0054 117.92)",
+          "oklch(49.29% 0.0054 117.92)",
+          "oklch(60.71% 0.0054 117.92)",
+          "oklch(72.14% 0.0054 117.92)",
+          "oklch(83.57% 0.0054 117.92)",
+          "oklch(95.00% 0.0054 117.92)"
+        ]
+      },
+      "phone-text": {
+        "displayName": "Phone text",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0191 144.93)",
+          "oklch(26.43% 0.0191 144.93)",
+          "oklch(37.86% 0.0191 144.93)",
+          "oklch(49.29% 0.0191 144.93)",
+          "oklch(60.71% 0.0191 144.93)",
+          "oklch(72.14% 0.0191 144.93)",
+          "oklch(83.57% 0.0191 144.93)",
+          "oklch(95.00% 0.0191 144.93)"
+        ]
+      },
+      "phone-group": {
+        "displayName": "Phone group",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15.00% 0.0000 89.88)",
+          "oklch(26.43% 0.0000 89.88)",
+          "oklch(37.86% 0.0000 89.88)",
+          "oklch(49.29% 0.0000 89.88)",
+          "oklch(60.71% 0.0000 89.88)",
+          "oklch(72.14% 0.0000 89.88)",
+          "oklch(83.57% 0.0000 89.88)",
+          "oklch(95.00% 0.0000 89.88)"
+        ]
+      }
+    },
+    "shadows": [
+      {
+        "name": "phone",
+        "value": "0 0 0 1px #41433e,0 2px 2px #fff8 inset,0 22px 38px #06110D18",
+        "purpose": "Материальность корпуса телефона."
+      },
+      {
+        "name": "phone-tab",
+        "value": "0 1px 3px #17201915",
+        "purpose": "Выбранная вкладка в статичном примере."
+      },
+      {
+        "name": "scene-status",
+        "value": "0 4px 18px #06110D12",
+        "purpose": "Локальная тень текущего индикатора."
+      }
+    ],
+    "motion": [
+      {
+        "name": "scene-default",
+        "value": "0.7s power2.inOut",
+        "purpose": "GSAP timeline."
+      },
+      {
+        "name": "component-transition",
+        "value": "0.25s ease",
+        "purpose": "Контур кнопки и фон шапки."
+      },
+      {
+        "name": "scene-status-transition",
+        "value": "0.18s ease",
+        "purpose": "Появление индикатора сцены."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "850px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      },
+      {
+        "name": "short-viewport-height",
+        "value": "650px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Store placeholder",
+      "kind": "button",
+      "refersTo": "store",
+      "description": "Контурная заглушка магазина приложения.",
+      "html": "<button class=\"ds-store\" type=\"button\" aria-disabled=\"true\"><span><small>Скоро в</small><strong>App Store</strong></span></button>",
+      "css": ".ds-store{font-family:\"Helvetica Neue\",Arial,sans-serif;border:1px solid #aab7af50;background:transparent;color:var(--foreground,#F4F3ED);border-radius:6px;display:flex;gap:12px;min-width:157px;padding:12px 18px;text-align:left;cursor:default;transition:border-color .25s,background .25s}.ds-store small{display:block;font-size:11px;color:var(--muted,#aab7af);margin-bottom:3px}.ds-store strong{font-size:16px;font-weight:400}.ds-store:hover{border-color:var(--accent,#C7EB72);background:color-mix(in srgb,var(--accent,#C7EB72) 4%,transparent)}.ds-store:focus-visible{outline:2px solid var(--accent,#C7EB72);outline-offset:6px}"
+    },
+    {
+      "name": "Beta badge",
+      "kind": "chip",
+      "refersTo": "beta",
+      "description": "Статичная маркировка стадии продукта.",
+      "html": "<span class=\"ds-beta\">BETA</span>",
+      "css": ".ds-beta{font-family:\"Helvetica Neue\",Arial,sans-serif;font-size:10px;letter-spacing:.13em;color:var(--foreground,#F4F3ED);border:1px solid #aab7af55;border-radius:3px;padding:4px 6px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Лёгкие текстовые якоря.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Разделы Bloom\"><a href=\"#about\">О Bloom</a><a href=\"#how\">Как это работает</a><a href=\"#trust\">Источники</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:34px;font:14px \"Helvetica Neue\",Arial,sans-serif;color:var(--muted,#aab7af)}.ds-nav a{color:inherit;text-decoration:none;padding:8px 0;text-underline-offset:7px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:2px solid var(--accent,#C7EB72);outline-offset:6px}"
+    },
+    {
+      "name": "Trust row",
+      "kind": "custom",
+      "description": "Номер, линия и проверяемый факт.",
+      "html": "<article class=\"ds-trust\"><span class=\"ds-label\">01</span><h3>Показатель</h3><p>Что измерено<br>в образце</p></article>",
+      "css": ".ds-trust{position:relative;font-family:\"Helvetica Neue\",Arial,sans-serif;color:var(--foreground,#F4F3ED);border-top:1px solid var(--line,#56635b);padding-top:30px}.ds-trust:before{content:\"\";position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:var(--accent,#C7EB72)}.ds-label{font-size:12px;letter-spacing:.13em;color:var(--accent,#C7EB72)}.ds-trust h3{font-size:clamp(27px,3.1vw,44px);font-weight:400;letter-spacing:-.04em;margin:23px 0 15px}.ds-trust p{font-size:18px;line-height:1.5;color:var(--muted,#aab7af);margin:0}"
+    },
+    {
+      "name": "Phone data group",
+      "kind": "card",
+      "refersTo": "screen-group",
+      "description": "Статичная группа данных внутри примера приложения.",
+      "html": "<div class=\"ds-group\"><div class=\"ds-row\"><span>Белки</span><span>3,2 г</span></div><div class=\"ds-row\"><span>Жиры</span><span>3,2 г</span></div></div>",
+      "css": ".ds-group{font-family:-apple-system,BlinkMacSystemFont,\"Helvetica Neue\",sans-serif;background:#fff;color:#182018;border-radius:13px;padding:0 13px}.ds-row{display:flex;justify-content:space-between;gap:8px;font-size:12px;padding:15px 0;border-bottom:1px solid #e9ece5}.ds-row:last-child{border-bottom:0}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Редакционная лаборатория",
+    "overview": "Bloom соединяет редакционную ясность с вниманием к фактам. Характер системы:\nспокойный, доказательный, премиальный, минималистичный и природный.\nКомпоненты сдержанные, точные и лёгкие. Воздух, крупные заголовки и\nвыверенные линии создают иерархию; фотографии и фирменный знак добавляют\nматериальность.\n\nОбласть документа — информационный сайт-открытка. Телефоны представляют\nстатичные примеры отдельного приложения. Продуктовые ограничения определяет\n`PRODUCT.md`. Визуальные антипримеры, подтверждённые пользователем:\nшаблонный лендинг, маркетплейс, стеклянные карточки и яркий неон.",
+    "keyCharacteristics": [
+      "Тёмная природная основа и точечный лаймовый акцент.",
+      "Крупная типографика обычного начертания и свободные поля.",
+      "Слоистая глубина через тон, фотографию и материалы устройств.",
+      "Лёгкие контурные элементы и ясные подписи данных."
+    ],
+    "rules": [],
+    "dos": [
+      "**Do** использовать утверждённую палитру при следующих визуальных изменениях.",
+      "**Do** сохранять фирменные материалы Bloom и природный характер.",
+      "**Do** строить иерархию масштабом текста, воздухом и тонкими линиями.",
+      "**Do** оставлять данные и пояснения читаемыми во время движения.",
+      "**Do** показывать статичные примеры приложения с ясной маркировкой."
+    ],
+    "donts": [
+      "**Don't** использовать шаблонный лендинг, маркетплейс, стеклянные карточки и яркий неон как визуальные образцы.",
+      "**Don't** добавлять действующие функции приложения в сайт-открытку.",
+      "**Don't** скрывать смысловой текст или перекрывать его соседними секциями."
+    ]
+  }
+}

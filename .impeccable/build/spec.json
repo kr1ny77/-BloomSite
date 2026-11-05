@@ -1,0 +1,577 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-17T19:09:35.055Z",
+  "comp": ".impeccable/mocks/bloom-new.png",
+  "warnings": [
+    "region hero-photo: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)"
+  ],
+  "uncoveredInkCells": [
+    "A7",
+    "B7",
+    "C7",
+    "D7"
+  ],
+  "compSize": {
+    "width": 1505,
+    "height": 1045
+  },
+  "aspect": 1.4402,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#0c1a13",
+      "coverage": 0.5627
+    },
+    {
+      "hex": "#f7f7e8",
+      "coverage": 0.2965
+    },
+    {
+      "hex": "#21331e",
+      "coverage": 0.0746
+    },
+    {
+      "hex": "#4d513b",
+      "coverage": 0.0474
+    },
+    {
+      "hex": "#394511",
+      "coverage": 0.0187
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.2247,
+      "strength": 0.4051
+    },
+    {
+      "y": 0.2809,
+      "strength": 0.3585
+    },
+    {
+      "y": 0.3258,
+      "strength": 0.499
+    },
+    {
+      "y": 0.3483,
+      "strength": 0.2242
+    },
+    {
+      "y": 0.3933,
+      "strength": 0.4622
+    },
+    {
+      "y": 0.7416,
+      "strength": 1
+    },
+    {
+      "y": 0.8539,
+      "strength": 0.6701
+    },
+    {
+      "y": 0.8989,
+      "strength": 0.9953
+    }
+  ],
+  "regions": [
+    {
+      "id": "masthead",
+      "kind": "chrome",
+      "note": "72px dark navigation with original Bloom wordmark and two links",
+      "grid": "A0:J0",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1505,
+        "h": 105
+      },
+      "aspect": 14.3333,
+      "palette": [
+        {
+          "hex": "#081816",
+          "coverage": 0.9458
+        },
+        {
+          "hex": "#24341f",
+          "coverage": 0.0432
+        },
+        {
+          "hex": "#45552a",
+          "coverage": 0.0051
+        },
+        {
+          "hex": "#f0f0f0",
+          "coverage": 0.0045
+        },
+        {
+          "hex": "#c8e878",
+          "coverage": 0.0013
+        }
+      ],
+      "detail": {
+        "energy": 8.9135
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "hero-photo",
+      "kind": "plate",
+      "note": "Photographic green apple yogurt and oats on forest stone; whole image bleeds at right and bottom",
+      "grid": "E0:J7",
+      "bleed": true,
+      "box": {
+        "x": 0.4,
+        "y": 0,
+        "w": 0.6,
+        "h": 0.8
+      },
+      "px": {
+        "x": 602,
+        "y": 0,
+        "w": 903,
+        "h": 836
+      },
+      "aspect": 1.0801,
+      "palette": [
+        {
+          "hex": "#101e17",
+          "coverage": 0.6707
+        },
+        {
+          "hex": "#4a4f39",
+          "coverage": 0.1149
+        },
+        {
+          "hex": "#f4f4e5",
+          "coverage": 0.112
+        },
+        {
+          "hex": "#26330d",
+          "coverage": 0.0681
+        },
+        {
+          "hex": "#c7bca7",
+          "coverage": 0.0343
+        }
+      ],
+      "detail": {
+        "energy": 21.1604
+      },
+      "medium": "raster",
+      "plate": ".impeccable/mocks/hero-photo.png",
+      "text": null
+    },
+    {
+      "id": "hero-title",
+      "kind": "text",
+      "note": "Знайте, что выбираете. Two lines, white sans, approximately 112px",
+      "grid": "A2:E3",
+      "coverBox": {
+        "x": 0,
+        "y": 0.2,
+        "w": 0.5,
+        "h": 0.2
+      },
+      "box": {
+        "x": 0.0478,
+        "y": 0.2,
+        "w": 0.4306,
+        "h": 0.2
+      },
+      "px": {
+        "x": 72,
+        "y": 209,
+        "w": 648,
+        "h": 209
+      },
+      "aspect": 3.1005,
+      "palette": [
+        {
+          "hex": "#08170c",
+          "coverage": 0.7032
+        },
+        {
+          "hex": "#f6f5ee",
+          "coverage": 0.2671
+        },
+        {
+          "hex": "#b2b2b0",
+          "coverage": 0.0123
+        },
+        {
+          "hex": "#484a48",
+          "coverage": 0.0116
+        },
+        {
+          "hex": "#566656",
+          "coverage": 0.0058
+        }
+      ],
+      "detail": {
+        "energy": 67.4009
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 18,
+          "capHeightPx": 86.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6564,
+          "advTall": 0.737,
+          "advX": 0.6529,
+          "gap": 0.0921,
+          "xRatio": 0.7041,
+          "stemW": 0.1557,
+          "contrast": 1.1577,
+          "serif": 1,
+          "densTall": 0.4904,
+          "densX": 0.5604,
+          "weight": 0.4904
+        },
+        "widthClass": "normal",
+        "weightClass": "medium",
+        "chosen": {
+          "family": "REM",
+          "weight": 400,
+          "fontSizePx": 124,
+          "source": "catalog",
+          "estimatedSize": true,
+          "stamp": "17a330b9d6a3"
+        }
+      }
+    },
+    {
+      "id": "hero-description",
+      "kind": "text",
+      "note": "Понятные факты о продуктах.",
+      "grid": "A4:D4",
+      "coverBox": {
+        "x": 0,
+        "y": 0.4,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0478,
+        "y": 0.4287,
+        "w": 0.3309,
+        "h": 0.0517
+      },
+      "px": {
+        "x": 72,
+        "y": 448,
+        "w": 498,
+        "h": 54
+      },
+      "aspect": 9.2222,
+      "palette": [
+        {
+          "hex": "#09170e",
+          "coverage": 0.8605
+        },
+        {
+          "hex": "#c1c0bf",
+          "coverage": 0.0471
+        },
+        {
+          "hex": "#343a36",
+          "coverage": 0.0393
+        },
+        {
+          "hex": "#7d807e",
+          "coverage": 0.0387
+        },
+        {
+          "hex": "#525c57",
+          "coverage": 0.0145
+        }
+      ],
+      "detail": {
+        "energy": 46.0065
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 22,
+          "capHeightPx": 25.6,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5461,
+          "advTall": null,
+          "advX": 0.5461,
+          "gap": 0.117,
+          "xRatio": 0.7075,
+          "stemW": 0.098,
+          "contrast": 1.0699,
+          "serif": 0.6792,
+          "densTall": null,
+          "densX": 0.3951,
+          "weight": 0.3951
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "hero-caption",
+      "kind": "text",
+      "note": "Концепция приложения",
+      "grid": "A5:C5",
+      "coverBox": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0.3,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0478,
+        "y": 0.5636,
+        "w": 0.1754,
+        "h": 0.0373
+      },
+      "px": {
+        "x": 72,
+        "y": 589,
+        "w": 264,
+        "h": 39
+      },
+      "aspect": 6.7692,
+      "palette": [
+        {
+          "hex": "#08180d",
+          "coverage": 0.8899
+        },
+        {
+          "hex": "#758266",
+          "coverage": 0.0857
+        },
+        {
+          "hex": "#878786",
+          "coverage": 0.0192
+        },
+        {
+          "hex": "#404840",
+          "coverage": 0.0052
+        }
+      ],
+      "detail": {
+        "energy": 17.4246
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": null,
+        "measuredAt": "2026-09-17T19:10:19.989Z",
+        "note": "no separable lettering in the crop; size by the region box"
+      }
+    },
+    {
+      "id": "store-buttons",
+      "kind": "control",
+      "note": "App Store and Google Play placeholders",
+      "grid": "A6:D6",
+      "coverBox": {
+        "x": 0,
+        "y": 0.6,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "box": {
+        "x": 0.0478,
+        "y": 0.6,
+        "w": 0.1754,
+        "h": 0.0402
+      },
+      "px": {
+        "x": 72,
+        "y": 627,
+        "w": 264,
+        "h": 42
+      },
+      "aspect": 6.2857,
+      "palette": [
+        {
+          "hex": "#081812",
+          "coverage": 0.8596
+        },
+        {
+          "hex": "#5e6758",
+          "coverage": 0.0844
+        },
+        {
+          "hex": "#858684",
+          "coverage": 0.0317
+        },
+        {
+          "hex": "#37413f",
+          "coverage": 0.0146
+        },
+        {
+          "hex": "#758567",
+          "coverage": 0.0097
+        }
+      ],
+      "detail": {
+        "energy": 19.3779
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "intro-title",
+      "kind": "text",
+      "note": "Состав. Оценка. Основание.",
+      "grid": "A8:H8",
+      "box": {
+        "x": 0,
+        "y": 0.8,
+        "w": 0.8,
+        "h": 0.1
+      },
+      "px": {
+        "x": 0,
+        "y": 836,
+        "w": 1204,
+        "h": 105
+      },
+      "aspect": 11.4667,
+      "palette": [
+        {
+          "hex": "#f7f7e9",
+          "coverage": 0.8269
+        },
+        {
+          "hex": "#090e0c",
+          "coverage": 0.1416
+        },
+        {
+          "hex": "#bbbfbb",
+          "coverage": 0.0121
+        },
+        {
+          "hex": "#4b4d4c",
+          "coverage": 0.0103
+        },
+        {
+          "hex": "#888d88",
+          "coverage": 0.009
+        }
+      ],
+      "detail": {
+        "energy": 86.1819
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 19,
+          "capHeightPx": 62.3,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.6745,
+          "advTall": 0.9957,
+          "advX": 0.6424,
+          "gap": 0.0803,
+          "xRatio": 0.6949,
+          "stemW": 0.1372,
+          "contrast": 1.1399,
+          "serif": 3.2583,
+          "densTall": 0.347,
+          "densX": 0.498,
+          "weight": 0.347
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    },
+    {
+      "id": "intro-caption",
+      "kind": "text",
+      "note": "За каждым выводом — источник.",
+      "grid": "B9:E9",
+      "box": {
+        "x": 0.1,
+        "y": 0.9,
+        "w": 0.4,
+        "h": 0.1
+      },
+      "px": {
+        "x": 151,
+        "y": 941,
+        "w": 602,
+        "h": 105
+      },
+      "aspect": 5.7333,
+      "palette": [
+        {
+          "hex": "#f8f8e8",
+          "coverage": 0.9726
+        },
+        {
+          "hex": "#5e625e",
+          "coverage": 0.0151
+        },
+        {
+          "hex": "#b9b9b4",
+          "coverage": 0.0089
+        },
+        {
+          "hex": "#8e8e8e",
+          "coverage": 0.0026
+        },
+        {
+          "hex": "#080808",
+          "coverage": 0.0009
+        }
+      ],
+      "detail": {
+        "energy": 8.7981
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 25,
+          "capHeightPx": 17,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5889,
+          "advTall": 0.6478,
+          "advX": 0.5889,
+          "gap": 0.1178,
+          "xRatio": 0.6951,
+          "stemW": 0.1317,
+          "contrast": 1.011,
+          "serif": 1.4994,
+          "densTall": 0.4069,
+          "densX": 0.5135,
+          "weight": 0.4069
+        },
+        "widthClass": "normal",
+        "weightClass": "regular"
+      }
+    }
+  ]
+}

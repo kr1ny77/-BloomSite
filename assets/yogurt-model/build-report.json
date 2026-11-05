@@ -1,0 +1,11 @@
+{
+  "parts": 9,
+  "estimated_triangles": 19458,
+  "dimensions": [
+    0.92,
+    0.92,
+    0.82
+  ],
+  "glb_bytes": 1516836,
+  "blender": "5.2.2 LTS"
+}

@@ -1,0 +1,27 @@
+{
+  "buildPath": "comp",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "templates/index.html"
+        ],
+        "createdAt": "2026-11-04T15:25:52.934Z",
+        "reason": "Agent verified rendered 320/390/1280px views: inside/app text inherits 24–64px shell gutters, sections have 76–128px block padding, and evidence summary provides 24px top inset; detector does not aggregate child padding."
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "templates/index.html"
+        ],
+        "createdAt": "2026-11-04T15:25:53.180Z",
+        "reason": "User requested a natural gradient supporting the Bloom leaf. Local green light intentionally unifies the original emblem and product stage; calm reading sections remain flat and contrast tokens were corrected and checked."
+      }
+    ]
+  }
+}

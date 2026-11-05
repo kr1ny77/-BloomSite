@@ -1,0 +1,8 @@
+{
+  "version": "v3", "fps": 60, "duration_seconds": 5, "frame_end": 300,
+  "resolution": [1536, 1024], "letter_start": 0.20, "stagger": 0.075,
+  "letter_duration": 1.40, "letter_fade": 0.48, "rise": 0.06,
+  "leaf_start": 1.15, "leaf_end": 2.90, "leaf_fade": 0.65,
+  "leaf_start_scale": 0.96, "hold_start": 3.00, "hold_frame": 181,
+  "easing": "quintic smootherstep; zero velocity and acceleration at both ends"
+}

@@ -1,0 +1,570 @@
+{
+  "createdAt": "2026-11-05T12:18:11.610Z",
+  "root": "dist",
+  "files": [
+    {
+      "file": "index.html",
+      "sha": "c1c6a4301b8ad824f652c5f5c5559ae31cc5620e",
+      "sha256": "be689f81a44c7f5b4fc1db846bcc55e38e1fc23eee4275a49a6684664f3d6037",
+      "size": 31543
+    },
+    {
+      "file": "static/css/style.css",
+      "sha": "236a45cd581be1b6c1b38c071199bdb2490eff8e",
+      "sha256": "f9e771dba2e8d4c350561071b8a31a000e8daa634e30da14c6245ff016a8058b",
+      "size": 35583
+    },
+    {
+      "file": "static/fonts/manrope-regular.ttf",
+      "sha": "a79767a1f0765e9452b43ed41b5d2406cf1e2fd7",
+      "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a",
+      "size": 94972
+    },
+    {
+      "file": "static/fonts/manrope-regular.woff2",
+      "sha": "24cf84c1981b401d0325c95f61c4282613f77d1b",
+      "sha256": "6839aab84e0abd22f54c9cf84ed2b71341b23d07c2792354a362bbe77183662c",
+      "size": 30312
+    },
+    {
+      "file": "static/fonts/manrope-semibold.ttf",
+      "sha": "b5e59950465f67853440f82e2966b36cb0aeaa03",
+      "sha256": "6bad1a774228464cc88b8b0271555b266f7a3c64a7bedf15e165fdab4f6ac0ce",
+      "size": 95096
+    },
+    {
+      "file": "static/fonts/manrope-semibold.woff2",
+      "sha": "f67cf04d4077ea51e44e4d41c7b431672ebbbf1e",
+      "sha256": "30e891d211ffafd601a8cdcfb07a1dacdaed98fede4f7189a043dbce6e566889",
+      "size": 30376
+    },
+    {
+      "file": "static/fonts/OFL.txt",
+      "sha": "12c29b4c541b7ba0f0d5d86818697558c1c28d76",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "size": 4387
+    },
+    {
+      "file": "static/fonts/onest-bloom.woff2",
+      "sha": "a440cfd8b826bf4b388fda457c46dd6545f771f7",
+      "sha256": "42286d99e9540adcf9c1a526aa98c3db24488e7aeab984a83b854155d3eda5c9",
+      "size": 41080
+    },
+    {
+      "file": "static/fonts/Onest-OFL.txt",
+      "sha": "f7e61c8cd20b2dffbbb690887571c679d11c38e9",
+      "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc",
+      "size": 4384
+    },
+    {
+      "file": "static/fonts/onest-variable.ttf",
+      "sha": "621a30540f67afc27b24889d7289f3b3796e5f2c",
+      "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31",
+      "size": 193056
+    },
+    {
+      "file": "static/fonts/onest-variable.woff2",
+      "sha": "f9f240db0858803a324b53cd5475e4521b93602f",
+      "sha256": "5e79acbef77b93ed95f2e458da4c946c9e4c6a421b22fc7ef7866627ee91c7ca",
+      "size": 84136
+    },
+    {
+      "file": "static/fonts/oooh-baby-regular.ttf",
+      "sha": "bfbb2ca99053296190ff5f0fa5b2442c3c528925",
+      "sha256": "904d1b79093da1ae4b7436ac2190ddf5048e3cb839b2dc0c0516d0f58a1c25ee",
+      "size": 135104
+    },
+    {
+      "file": "static/fonts/oooh-baby-regular.woff2",
+      "sha": "3f52d6cce6f292a788bce20141e2feaaae558eee",
+      "sha256": "1956bde5c2c11d258717c9292feedbdbc0f06ae2c87ca55055fbc60fc627ebfb",
+      "size": 53664
+    },
+    {
+      "file": "static/fonts/OoohBaby-OFL.txt",
+      "sha": "e982b74c7f10863aea4ad621d2d32cab5d63d7c9",
+      "sha256": "a768f4c2b04f8e960236f9854c8afeb3626fb34927f25aa66aa7f1cc8cea715e",
+      "size": 4397
+    },
+    {
+      "file": "static/fonts/pacifico-loom.woff2",
+      "sha": "dfd699312b62694d7a894a5fc997faf3aa4ea495",
+      "sha256": "0d5f333a1421804571797ea057a2978874191c4328c9944609949e178df722f3",
+      "size": 3644
+    },
+    {
+      "file": "static/fonts/Pacifico-OFL.txt",
+      "sha": "49b8cff0cbd9ece132be784264b89507d69de430",
+      "sha256": "a47e5daeda73568969395c656823102678f2eefb0d7d7ecb47aac4cc17e42204",
+      "size": 4389
+    },
+    {
+      "file": "static/fonts/pacifico-regular.ttf",
+      "sha": "3d0b9eb17e645ac34f83c49c3f988372b242173a",
+      "sha256": "5b6c0d5334a7bf77dea52b975c5a0c408878c0f7115ed5b6fb151f634b7bf701",
+      "size": 329380
+    },
+    {
+      "file": "static/images/barcode-context-1536.webp",
+      "sha": "5b863a5ea3e155c19101bb881ab851b15ee59153",
+      "sha256": "f30adc30a196aa258c17331e78b6582524b1dbf455e048168b1d0e611e56ebbf",
+      "size": 90368
+    },
+    {
+      "file": "static/images/barcode-context-768.webp",
+      "sha": "5e40a526bbac3f23e801b51d54ed2b448c343a2c",
+      "sha256": "c7d46df44cc9217ff70b3fc71b7e9901505180c23d89ec3bbebe5e1e9056a626",
+      "size": 32570
+    },
+    {
+      "file": "static/images/bloom-icon.webp",
+      "sha": "b9eed0f07d1a7b1725cdb8eeb26013226fb62f6b",
+      "sha256": "402e879592637154a69dfb91d84abaf172f836da8fbf2e303a7331fae470fd2f",
+      "size": 21826
+    },
+    {
+      "file": "static/images/bloom-lowercase.svg",
+      "sha": "7cccb1e4273f237e01ca9d9b36ecddc81e747515",
+      "sha256": "68157446c77d8e3839fde0b77fc93b05b824fc6779e007bd6bea2ea1515913d6",
+      "size": 433
+    },
+    {
+      "file": "static/images/bloom-mark-320.webp",
+      "sha": "4570d0c0ad5b0742b770427867f1951d2629c375",
+      "sha256": "98cbcef689457911f710e9632e87930f9f2cd1e41e9dff25e7b5420e46442eca",
+      "size": 7006
+    },
+    {
+      "file": "static/images/bloom-mark-640.webp",
+      "sha": "065f7aeb8a90ccab03b3b6b3835ba30adbc5d987",
+      "sha256": "e925af5a90062252123d8eac2fe2f19635ef1b9cdcce1d9a19851548fa651493",
+      "size": 19006
+    },
+    {
+      "file": "static/images/bloom-mark-96.webp",
+      "sha": "c1153cee7e705176b58bf0b6cb5616c0bda06718",
+      "sha256": "2acf25db6581dce3ccf45f8ba8798a01c43f92c72badfb9a08fcda3676cecdc4",
+      "size": 1892
+    },
+    {
+      "file": "static/images/bloom-mark.webp",
+      "sha": "f210dc7427087d72c06d0dc4ace9f379c463d6c5",
+      "sha256": "e5ec6bff44f009ab1e150ccafe20c61b2c703e3230a15dcd83ef7501cc504b6b",
+      "size": 65388
+    },
+    {
+      "file": "static/images/bloom-social.jpg",
+      "sha": "2d9610a34a90d294d8429cb40344e4556ff380a2",
+      "sha256": "f566badc1ad781b8b010df6b6ee5dbda174a7035d2509d0ef500aaab0f7afe76",
+      "size": 41858
+    },
+    {
+      "file": "static/images/bloom-still-life.jpg",
+      "sha": "b87095ef8f50876e8d4b7e57ce8c7c5ba32b03cc",
+      "sha256": "656064dfdb479b241f057ffb02c04824c6a20f229e6ded975946b5bd606a3375",
+      "size": 339129
+    },
+    {
+      "file": "static/images/bloom-still-life.webp.json",
+      "sha": "6b2a8d48551c9144bd950a103a20fa936f0f74f5",
+      "sha256": "2ee570f40f915830a2593700e7c71fcce674906260473897cf40083c6b10e2cf",
+      "size": 1176
+    },
+    {
+      "file": "static/images/bloom-wordmark-final.webp",
+      "sha": "7b455cdbc1c4470d337ba2cb9fa1212842c02f32",
+      "sha256": "8eeb881428c2dfdc81b481f54e5fa387e1485dcf5ff85be2443d5f5524c73ca5",
+      "size": 232904
+    },
+    {
+      "file": "static/images/bloom-wordmark-first.webp",
+      "sha": "5da670763b822f0490800d96e0df0dcc3c8fe860",
+      "sha256": "28b058832d7563264f78dcc1f448d6a2e1ba318715c8e3ac12611a83291f20a1",
+      "size": 124448
+    },
+    {
+      "file": "static/images/composition-phone.webp",
+      "sha": "060861e7d99a44a976df18d374e53761524f960d",
+      "sha256": "f8d56b0dbdb92aeb5ff56804c0a92523fd146dd439baa4e4500dd6c158b16b70",
+      "size": 32856
+    },
+    {
+      "file": "static/images/context-ingredients.webp",
+      "sha": "a9afbb1ba6feb15b46bf93c4ef92b529225e4bdc",
+      "sha256": "ab718fe6ad3464bfdf7f358524d2f971b815afa76812a27116f7b6d94f131d03",
+      "size": 211598
+    },
+    {
+      "file": "static/images/context-packaged-wide-768.webp",
+      "sha": "fffac21625f164b78cacd4e80b5d2a8e2517a15e",
+      "sha256": "e6452767df186e71b8a2137a35a61eb511a25347d582ce376cef082d125764f2",
+      "size": 42188
+    },
+    {
+      "file": "static/images/context-packaged-wide.webp",
+      "sha": "f4819565c7d8164ad042fdffd0609839a4c5b516",
+      "sha256": "8d1d3c721462b15b29f1f7406e8a903abeb3d1740ba8f6cdec026440d9360c4b",
+      "size": 152572
+    },
+    {
+      "file": "static/images/context-packaged.webp",
+      "sha": "95a8c9397259c48603d4890ee110aec62c76d9b0",
+      "sha256": "fa53d1412df358a8061c8f29b51a5e6b1a946674c222e642ad27c61a987777bb",
+      "size": 135354
+    },
+    {
+      "file": "static/images/context-shopping-768.webp",
+      "sha": "66bcbf355d1d7b7da423edaec30a5e62baa7287e",
+      "sha256": "4fb2a82b794b016bf6953ccff4a69675e16867677bdbc68f145f62282e8514be",
+      "size": 35922
+    },
+    {
+      "file": "static/images/context-shopping.webp",
+      "sha": "ecd2300c1569d1d3fff0fc1338fabeb99cc1ddc0",
+      "sha256": "6905b9256f3033d5e7f2a3abd7b3d33ec6a560ef8c1c309b8ac689c783521dbe",
+      "size": 91182
+    },
+    {
+      "file": "static/images/everyday-choice-1536.webp",
+      "sha": "0d0c71255579851240f09de04fa5acca2382960b",
+      "sha256": "acf23ad7792f6e2a286768f5d77a8afe270459f8fe7e4d500bc2f085b2c275f0",
+      "size": 176798
+    },
+    {
+      "file": "static/images/everyday-choice-768.webp",
+      "sha": "30bcdc9964464f627d05ddbe9aeacf0061560bde",
+      "sha256": "0576d7fe4c7709356a940ea74562660c51089aadd1181de54570d0308063f5ed",
+      "size": 48510
+    },
+    {
+      "file": "static/images/favicon.png",
+      "sha": "3ed6d1fc5f4440dedf9948eeede57d5c0cc11bd2",
+      "sha256": "8c114f2168430fc894081b91d084842576d0e03d9655d06b208805482644d062",
+      "size": 4831
+    },
+    {
+      "file": "static/images/food-editorial-768.webp",
+      "sha": "9458370a06c9741a0772111e966609bc29902e5d",
+      "sha256": "b6f3f8a188657c4c1c2894c59d3ce592c40f911c8c22afac7bef4c947b8ce3bf",
+      "size": 26574
+    },
+    {
+      "file": "static/images/food-editorial.webp",
+      "sha": "005d73c1237accc4e2b3c7f6988e1654315dc275",
+      "sha256": "ee80e1174ec6a2fafaccd14f99b38b928ba777248de02253156a5d88c458e7f2",
+      "size": 97308
+    },
+    {
+      "file": "static/images/groceries-story.webp",
+      "sha": "41a3e689368f116687a1956708a331fb5420023d",
+      "sha256": "498c1de430bad1d43366edfff90e34f1daf23e8b6956faa0559a87f7bb105e59",
+      "size": 53124
+    },
+    {
+      "file": "static/images/groceries.webp",
+      "sha": "b86c917d731ef197860a60f259a02089faaaed88",
+      "sha256": "54c7b505e877ca3bb5214e232e55a88a437510a17b692698042829fe1d35b2e9",
+      "size": 44528
+    },
+    {
+      "file": "static/images/hero-apple.webp",
+      "sha": "4c72f5ac082a40a3a90b80817f327277fce324ba",
+      "sha256": "ac21a4e9c021742edbbca0065d0838c7d323c0ebe1ce16e5e9236ae2a6397105",
+      "size": 88780
+    },
+    {
+      "file": "static/images/inside-fruit-1536.webp",
+      "sha": "3324f2fa5238ee20e6c63c8e43cad99f497a7c0b",
+      "sha256": "77c83d5b303da7b34eb0949f2c557bdfaa4efee6133f87eaafb5acac371e52d6",
+      "size": 287758
+    },
+    {
+      "file": "static/images/inside-fruit-768.webp",
+      "sha": "f09408ffcde4e3015688a4d11ed05b9e66b8ac1a",
+      "sha256": "c424857c2b9a04e9cae6f31ee7e29216ee673f5e18c91c9a7a03e22706808071",
+      "size": 92736
+    },
+    {
+      "file": "static/images/ios-apps/books.webp",
+      "sha": "ed7e9d0f405694db73d8dec46664b996b7e8e550",
+      "sha256": "c3770cea3b94a07793bd4b4e24f49ff14b7cd462efeba2bc8855fb476531376c",
+      "size": 2238
+    },
+    {
+      "file": "static/images/ios-apps/calendar.webp",
+      "sha": "62c7646ffcfdfae3d2212a072cff628a7cd9cd9a",
+      "sha256": "c107b0bd2ce0d1d687b2cec9f9632918f7658d695c10109c3fd2692d3ce36dfc",
+      "size": 1522
+    },
+    {
+      "file": "static/images/ios-apps/clock.webp",
+      "sha": "776935474171f50f3d639fbb2b53dbb395d71b02",
+      "sha256": "dea7988b1e78407259f60b1165f660a6e0864de6750cda0f5ab13619735dfd56",
+      "size": 4468
+    },
+    {
+      "file": "static/images/ios-apps/files.webp",
+      "sha": "50243dc7238d70b2a332be48217455af4345d4c1",
+      "sha256": "75c477b8715b03153c5a46b697083c36e9ebcb467cd9365e417e049c58df74e5",
+      "size": 1502
+    },
+    {
+      "file": "static/images/ios-apps/mail.webp",
+      "sha": "11ee5e576b349878cfbd7311e0ad87b0c0ea8d65",
+      "sha256": "6c960c93145d955ee7f5fe15545e5cee3bc6ba74fd97e1e5358886d6c118dda7",
+      "size": 2044
+    },
+    {
+      "file": "static/images/ios-apps/maps.webp",
+      "sha": "661511e55488e862a7dc0081b32dae17f33f660c",
+      "sha256": "352d13fd74acc5598710162d7c8350756340cd1834f0b60a016d11dc2e40f355",
+      "size": 4142
+    },
+    {
+      "file": "static/images/ios-apps/messages.webp",
+      "sha": "4b6eb4f6713cbd665cc9206460f9a47d26202eba",
+      "sha256": "ac7a5e718d5158f911908a7c96e9bdaefd30d7a067bfb6450aa11a1b15356f55",
+      "size": 2356
+    },
+    {
+      "file": "static/images/ios-apps/music-classic.svg",
+      "sha": "492090cfed8ad7eaf5a97e8fbd09752f5e6b1468",
+      "sha256": "e17c3c7ad50b7a0b2b7dbade1493518338c76766c0513abd84f615d1c5048153",
+      "size": 3365
+    },
+    {
+      "file": "static/images/ios-apps/music.webp",
+      "sha": "bd24f7df0c6a8e16053a87220df1af0a17fb5c48",
+      "sha256": "eed5b7cc2923960391577c51137c326c4b65f6a0cfc577f88f96a51093308277",
+      "size": 1690
+    },
+    {
+      "file": "static/images/ios-apps/notes.webp",
+      "sha": "3be765b062fe648eacfd8e625ea154b0f47df025",
+      "sha256": "41a0647a8dcdf716c2c5d001062e6d7c6d20abdbff8ed25730e2ab03272a6e19",
+      "size": 1348
+    },
+    {
+      "file": "static/images/ios-apps/phone.webp",
+      "sha": "b06e5ee7e045e7f88d96b6cf89506a70771aaa1a",
+      "sha256": "e5b8ed22b009c0b4f218b386a4b07d8b5920c72ea751e7bdd408b915a9a2361b",
+      "size": 2236
+    },
+    {
+      "file": "static/images/ios-apps/podcasts.webp",
+      "sha": "525a79c584753b423e56cae345d64e2df10148b6",
+      "sha256": "6b0bf5292f50e46176327f3a199b75216c33d798996679660557be3e6aa0d362",
+      "size": 3000
+    },
+    {
+      "file": "static/images/ios-apps/safari.webp",
+      "sha": "5d276dba25bd5efa05fcd512f9deb730770a5d65",
+      "sha256": "356a3430d8164046241ab4aac26a54e3cc17eb3aa1be96384fcf4f0c6d5fc231",
+      "size": 4308
+    },
+    {
+      "file": "static/images/ios-apps/shortcuts.webp",
+      "sha": "b1c991507eb8abfb10b8b22bbbaeaabb4a6417bc",
+      "sha256": "d9c9460ec14627efa7648934721235c2409798edbfced68ed165367b897546be",
+      "size": 1820
+    },
+    {
+      "file": "static/images/ios-apps/weather.webp",
+      "sha": "33ae97215ee634c49992f99ceb2002c8588f2c0e",
+      "sha256": "02c3a565e10d10693d82e11c3974764683508a9331b09aac3d74f72a75d752ba",
+      "size": 2722
+    },
+    {
+      "file": "static/images/journey-package-500.webp",
+      "sha": "e8949b3fa532dcdf9a4f1fbda6d251cf6d02b095",
+      "sha256": "346a8c5ae015bcab21dcfeb75a06397b3cfe7403d1e2fc4a73ca5fadc91d811a",
+      "size": 21810
+    },
+    {
+      "file": "static/images/journey-package-900.webp",
+      "sha": "cdfdbec2a574748c70f026375a3bea67849e8808",
+      "sha256": "631be7db159224c6f61ceb4447d4df9f0c44f1594aded74399751ceaa46165bb",
+      "size": 60594
+    },
+    {
+      "file": "static/images/menu-barcode.webp",
+      "sha": "cc204ab56237d991b5d9c75a1d2e47f37351aea4",
+      "sha256": "6aee1af17111fa48f65767474c90098e51c9fdf010950a9e7e66384225b3e2d5",
+      "size": 49194
+    },
+    {
+      "file": "static/images/menu-ingredients.webp",
+      "sha": "78f88bdb115886002e80a32bac603fab93c66cdc",
+      "sha256": "8cb50b99c09b61fde1cc673b4d1c225d851ade9b432cfde153f830c2ebe871b5",
+      "size": 97382
+    },
+    {
+      "file": "static/images/result-phone.webp",
+      "sha": "b2d1f3f370a614614fd8395ab6e871ace1392888",
+      "sha256": "3ce2abb5f494701a4718ce03cc9b7f9a24a5b9f2e8f2047f7d21a3f0c55c68ab",
+      "size": 34160
+    },
+    {
+      "file": "static/images/store-apple.svg",
+      "sha": "4b8ea63ee31ec70386d437953ed84c031ab0f09c",
+      "sha256": "2a1509dccd25e6d2bc7a11a8e52941077e1a48555e192ce638699b9f083c2a7c",
+      "size": 650
+    },
+    {
+      "file": "static/images/store-barcode-1536.webp",
+      "sha": "45f0048fbe97887e6faa3b1e0fa3d5436c1162c8",
+      "sha256": "ae2f6496051b22ba0f16941a8b46593b675911a0d6fe5d1f8347eb4f07901ab0",
+      "size": 94420
+    },
+    {
+      "file": "static/images/store-barcode-768.webp",
+      "sha": "3a6be34ea6534dce33f93d3412432673b857844d",
+      "sha256": "c20b88ca0e94090213a74ceead590fb955b54f28c69d9cd3891c54f1e34ccaab",
+      "size": 38698
+    },
+    {
+      "file": "static/images/store-google-play.svg",
+      "sha": "a02f901992f630d603ab45bec4c4396e22610f99",
+      "sha256": "81818efe46f3d59d5d320063df77746016dc2c4a64b94be5abcf26824f74c6e7",
+      "size": 439
+    },
+    {
+      "file": "static/images/yogurt-front.webp",
+      "sha": "9bd585eb178e946f63cb62eebf861f15b9be4a88",
+      "sha256": "65d55cf2ee6e4eb96e0c4ec024cd6aec7e0b67420b5018222750cbb6ea005f25",
+      "size": 81186
+    },
+    {
+      "file": "static/images/yogurt-reverse.webp",
+      "sha": "76d05508eac6e9839f11f4c7d8d5063ded57789e",
+      "sha256": "4c5c33f78864c995540fb1c4b92f0e73048fd10ce7b53fad0ec8cf9b211d33cd",
+      "size": 62274
+    },
+    {
+      "file": "static/js/app.js",
+      "sha": "bfc0322cddec93f07ac951f22444a5bd6e45b1db",
+      "sha256": "ef5d00d5152f80734ed2e202c4592d82c5c0c67bb18252fdfc867f18a79e9127",
+      "size": 4131
+    },
+    {
+      "file": "static/js/gsap.min.js",
+      "sha": "fa1aeabcead11241607d9249ff20c8bcbbac2012",
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+      "size": 72435
+    },
+    {
+      "file": "static/js/intro.js",
+      "sha": "077872fac623a9a588f779820dcef1b04149cfb8",
+      "sha256": "dca2add45e10cb00fa60f436adb81de9d7dd07e86fb3b40ecd78479414e2c838",
+      "size": 2048
+    },
+    {
+      "file": "static/js/lenis.min.js",
+      "sha": "eb73eeb47dcdac3cb3828300f6d8afab65f6a4cc",
+      "sha256": "67f0fe0cfc672269ced6bf0cf44913ca3d7a60235a89f9a93c66f5767adea729",
+      "size": 16397
+    },
+    {
+      "file": "static/js/menu-preview.js",
+      "sha": "c862ef3b5f9b7f091ab286e94a9311d1b12de861",
+      "sha256": "e86ef94456db4b8372fe22180a19852ea64a11c6050512ff79759a4be0cf437d",
+      "size": 2189
+    },
+    {
+      "file": "static/js/motion.js",
+      "sha": "82c3e3f9176af03389f203df7b82682410f1ed76",
+      "sha256": "99b45ce49489dd326068ebb08e8d40dffde6b2a9c687082b3c17aff91205d6da",
+      "size": 5118
+    },
+    {
+      "file": "static/js/presentation.js",
+      "sha": "ed00bf14701e131979713ecb42b2c896b952114a",
+      "sha256": "f00926c1a3f3c21441d144292cd6f36442a8820aa28739dc8452969ce6fc92b2",
+      "size": 1403
+    },
+    {
+      "file": "static/js/product-viewer.js",
+      "sha": "b422a8986092265a68dd4110c414d536ef3b0eec",
+      "sha256": "c7868e0cf1aa6c90d25f8717b1253c8aaff6091b788068b4f6c2fb038e5121f9",
+      "size": 628864
+    },
+    {
+      "file": "static/js/product.js",
+      "sha": "2d58f3ae5d65bcabde054681cbe323a425e26f8e",
+      "sha256": "2f8309dffc401ec1fbc7e46cd86a01bc59ba3d35f490ab8733eee61ca73983f0",
+      "size": 11481
+    },
+    {
+      "file": "static/js/scanner.js",
+      "sha": "b576fa29e003da6f12ce2387dcd71a62593ccb88",
+      "sha256": "c868e485cca6852550b705ede6de75cfdb790f01f20fd89feaf878fd207d7d58",
+      "size": 379
+    },
+    {
+      "file": "static/js/ScrollTrigger.min.js",
+      "sha": "ecd3242f5dac796b8d205d4084d877d0663e040f",
+      "sha256": "308219390e5e3b84cda0c481e70caa9820883ae10bda44e6e9a149a81aac4b3f",
+      "size": 44157
+    },
+    {
+      "file": "static/media/bloom-intro.mp4",
+      "sha": "7c91e68f2d25e13358f558230e09214c56fc66a3",
+      "sha256": "3a3910cf0fa41ef6327bcf1b47d22362e1886748501548b259bfb4b0acd5654e",
+      "size": 204910
+    },
+    {
+      "file": "static/media/bloom-logo/intro-dark.webp",
+      "sha": "20ca7cdca315b069f79df74ac240fb10219447d9",
+      "sha256": "6ede5e13e2e99c6320a5d1f169f9ea0a0d400d5dc7cae186d9ed93d4044223d9",
+      "size": 677180
+    },
+    {
+      "file": "static/media/bloom-logo/intro-light.webp",
+      "sha": "d1a37b37e77a49b69482525e675d483fe123d47a",
+      "sha256": "740a314eaff2b93f3033240c644f77e909ba99d7b7809b887fa9683e98e41588",
+      "size": 606708
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-dark.webp",
+      "sha": "96b94903d60601bdd4b64c85275d5c532dbc0c15",
+      "sha256": "ed3798e671458ad7d0796f6399c4085c4ba0a7f0c8d2d07e0f883c3f2579a5bd",
+      "size": 2127032
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-light.webp",
+      "sha": "9a419a156e82b8a4edcf1166503697decb459764",
+      "sha256": "6d637422ab3afe23e7f7ee8a9236313536a7739e265ffd5150cc2e2ff07c4733",
+      "size": 1921608
+    },
+    {
+      "file": "static/media/bloom-logo/static-dark.webp",
+      "sha": "514f4b2196d86a384e90d51f3a3a74b9a5095a2c",
+      "sha256": "764ee620851200413e185cce86a3c6935aa0fbcbe1d3b97041a4d83f1408bf7f",
+      "size": 97884
+    },
+    {
+      "file": "static/media/bloom-logo/static-light.webp",
+      "sha": "6f036e0db0a301c60d690c03d62f4f3055679152",
+      "sha256": "2699600800088e14d80c1d9470e168e628f409c7acaed99b909398835b1fd439",
+      "size": 72010
+    },
+    {
+      "file": "static/media/bloom-logo/static-v3-dark.webp",
+      "sha": "9b3f5039206ba10066cca30192503a254b919606",
+      "sha256": "392bb03eac26170da25509ebdf148d108a0ae86bc51e238f6bdce0f787c4da25",
+      "size": 99190
+    },
+    {
+      "file": "static/media/bloom-logo/static-v3-light.webp",
+      "sha": "4211239fb10cc1d9cb90d8a23204c35b3271bc5c",
+      "sha256": "dc88e498c6d238b42df228ad2442eb96a97569a05a209de1ee12684ab358b722",
+      "size": 72594
+    },
+    {
+      "file": "static/models/yogurt.glb",
+      "sha": "44ec0528574974d12db38b5acf9674a89c11e4b2",
+      "sha256": "662884586002bdb2ccb34cd9ebd96ebafaa3dd407d767f992abe2ec4bd6352b4",
+      "size": 1516836
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#06110D" />
+    <meta
+      name="description"
+      content="Bloom: будущее приложение для понимания состава и пищевой ценности продуктов. Понятные объяснения на основе доступных данных и источников."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="Bloom | Знайте, что выбираете" />
+    <meta
+      property="og:description"
+      content="Будущее приложение, которое помогает понимать состав, пищевую ценность и основания вывода о продукте."
+    />
+    <meta property="og:image" content="/static/images/bloom-social.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Bloom. Знайте, что выбираете. Оригинальная зелёная эмблема на лесном фоне."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Bloom | Знайте, что выбираете</title>
+    <link rel="icon" href="/static/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/static/images/favicon.png" />
+    <link
+      rel="preload"
+      href="/static/fonts/onest-bloom.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/fonts/pacifico-loom.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/static/images/bloom-mark-640.webp"
+      as="image"
+      imagesrcset="/static/images/bloom-mark-320.webp 320w, /static/images/bloom-mark-640.webp 640w"
+      imagesizes="(max-width: 767px) 40vw, 26vw"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="/static/css/style.css?v=redesign1" />
+    <script defer src="/static/js/intro.js?v=2"></script>
+    <script defer src="/static/js/app.js?v=redesign1"></script>
+    <script defer src="/static/js/presentation.js?v=4"></script>
+    <script defer src="/static/js/motion.js?v=1"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="Bloom: начало"
+        ><img
+          src="/static/images/bloom-mark-96.webp"
+          width="30"
+          height="30"
+          alt=""
+        /><span>Bloom</span></a
+      >
+      <nav class="primary-nav" aria-label="Разделы сайта">
+        <a href="#about">О составе</a><a href="#app">Приложение</a
+        ><a href="#trust">Источники</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Изменить цветовую тему"
+          hidden
+        >
+          <span aria-hidden="true">◐</span>
+        </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="site-menu"
+          aria-expanded="false"
+          hidden
+        >
+          <span>Меню</span><span class="menu-glyph" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+    <dialog class="site-menu" id="site-menu" aria-labelledby="menu-title">
+      <div class="menu-panel">
+        <div class="menu-top">
+          <p id="menu-title">Откройте Bloom</p>
+          <button class="menu-close" type="button" aria-label="Закрыть меню">
+            Закрыть <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="menu-layout">
+          <div class="menu-preview" aria-hidden="true">
+            <img
+              src="/static/images/bloom-mark-640.webp"
+              width="520"
+              height="520"
+              alt=""
+            />
+            <p class="menu-preview-caption">Понятные факты о продуктах.</p>
+          </div>
+          <nav class="menu-links" aria-label="Навигация Bloom">
+            <a href="#about" data-preview="choice"
+              ><span>О составе</span><small>Заглянуть за упаковку</small></a
+            >
+            <a href="#how" data-preview="path"
+              ><span>Как устроен Bloom</span
+              ><small>От продукта к пониманию</small></a
+            >
+            <a href="#app" data-preview="app"
+              ><span>Приложение</span
+              ><small>Посмотреть будущий интерфейс</small></a
+            >
+            <a href="#trust" data-preview="trust"
+              ><span>Источники</span><small>Понять основания вывода</small></a
+            >
+            <a href="#closing" data-preview="launch"
+              ><span>Будущий запуск</span
+              ><small>Bloom для iOS и Android</small></a
+            >
+          </nav>
+        </div>
+        <div class="menu-bottom">
+          <span>Знайте, что выбираете.</span
+          ><span>Приложение в разработке</span>
+        </div>
+      </div>
+    </dialog>
+    <main id="main">
+      <section class="hero" id="hero" data-slide aria-labelledby="hero-title">
+        <div class="hero-light" aria-hidden="true"></div>
+
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Знайте, что<br />выбираете.</h1>
+            <p>
+              Понятные факты о продуктах.<br />Будущее приложение о составе,
+              пищевой ценности и осознанном выборе.
+            </p>
+            <a class="button button-primary" href="#how"
+              >Как устроен Bloom<span class="button-arrow" aria-hidden="true"
+                >↗</span
+              ></a
+            >
+          </div>
+          <div class="hero-brand" data-intro-state="static">
+            <div class="wordmark" role="img" aria-label="Bloom">
+              <img
+                class="wordmark-mark"
+                src="/static/images/bloom-mark-640.webp"
+                srcset="
+                  /static/images/bloom-mark-320.webp 320w,
+                  /static/images/bloom-mark-640.webp 640w
+                "
+                sizes="(max-width: 767px) 40vw, 26vw"
+                width="560"
+                height="560"
+                alt=""
+                fetchpriority="high"
+              /><span class="wordmark-loom" aria-hidden="true">loom</span>
+            </div>
+            <!-- Add data-intro-ready to .hero-brand only after the final film is approved. The original emblem and Pacifico remain the complete static composition. -->
+            <video
+              class="wordmark-video"
+              width="1320"
+              height="800"
+              muted
+              playsinline
+              preload="none"
+              data-src="/static/media/bloom-intro.mp4"
+              aria-hidden="true"
+              hidden
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="context section-space shell"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="context-intro">
+          <h2 id="about-title">Знакомая упаковка.<br />Что внутри?</h2>
+          <p>
+            Для тех, кто хочет понимать свой выбор. В магазине, дома и каждый
+            раз, когда хочется разобраться в составе.
+          </p>
+        </div>
+        <figure class="context-visual">
+          <img
+            src="/static/images/context-shopping.webp"
+            srcset="
+              /static/images/context-shopping-768.webp  768w,
+              /static/images/context-shopping.webp     1536w
+            "
+            sizes="(max-width: 767px) calc(100vw - 48px), 45vw"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            alt="Покупатель изучает упаковку йогурта в магазине"
+          />
+        </figure>
+        <p class="context-note">
+          Ингредиенты, цифры, обещания.<br />Bloom поможет увидеть за ними
+          понятную картину.
+        </p>
+      </section>
+
+      <section
+        class="inside section-space"
+        id="inside"
+        aria-labelledby="inside-title"
+      >
+        <div class="shell">
+          <div class="inside-heading">
+            <h2 id="inside-title">Внутри больше,<br />чем кажется.</h2>
+            <p>
+              Состав, пищевая ценность, источники. Bloom свяжет доступные
+              сведения с понятным объяснением.
+            </p>
+          </div>
+          <figure class="food-scene">
+            <img
+              src="/static/images/food-editorial.webp"
+              srcset="
+                /static/images/food-editorial-768.webp  768w,
+                /static/images/food-editorial.webp     1536w
+              "
+              sizes="(max-width: 767px) calc(100vw - 48px), 90vw"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              alt="Зелёное яблоко в разрезе, авокадо, йогурт и овсяные хлопья на зелёной поверхности"
+            />
+          </figure>
+          <dl class="context-facts">
+            <div>
+              <dt>Состав</dt>
+              <dd>Что входит в продукт и что означают ингредиенты.</dd>
+            </div>
+            <div>
+              <dt>Пищевая ценность</dt>
+              <dd>
+                Белки, жиры и углеводы на 100 г, чтобы сравнивать на одной
+                основе.
+              </dd>
+            </div>
+            <div>
+              <dt>Источники</dt>
+              <dd>Откуда взяты сведения и на чём основано объяснение.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section
+        class="method section-space shell"
+        id="how"
+        aria-labelledby="how-title"
+      >
+        <div class="method-heading">
+          <h2 id="how-title">От продукта<br />к пониманию.</h2>
+          <p>
+            Так мы видим путь в будущем приложении. От первого вопроса к фактам,
+            которые помогают выбрать.
+          </p>
+        </div>
+        <div class="method-layout">
+          <ol class="method-list">
+            <li>
+              <span class="path-node" aria-hidden="true"></span>
+              <h3>Найти продукт</h3>
+              <p>
+                Сканирование упаковки или поиск откроют карточку продукта в
+                будущем приложении.
+              </p>
+            </li>
+            <li>
+              <span class="path-node" aria-hidden="true"></span>
+              <h3>Разобраться в составе</h3>
+              <p>
+                Ингредиенты и пищевая ценность соберутся в одном месте.
+                Доступные показатели исследований дополнят картину.
+              </p>
+            </li>
+            <li>
+              <span class="path-node" aria-hidden="true"></span>
+              <h3>Понять вывод</h3>
+              <p>
+                Объяснение свяжет результат с исходными данными. Рядом будут
+                основания и доступные источники.
+              </p>
+            </li>
+          </ol>
+          <div class="method-visual">
+            <figure class="method-picture">
+              <img
+                src="/static/images/context-packaged-wide.webp"
+                srcset="
+                  /static/images/context-packaged-wide-768.webp  768w,
+                  /static/images/context-packaged-wide.webp     1536w
+                "
+                sizes="(max-width: 767px) calc(100vw - 48px), 45vw"
+                width="1536"
+                height="1024"
+                loading="lazy"
+                alt="Упаковка йогурта на столе: отправная точка знакомства с продуктом"
+              />
+            </figure>
+            <p>Один продукт. Больше понимания.</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="app section-space"
+        id="app"
+        data-slide
+        aria-labelledby="app-title"
+      >
+        <div class="shell app-layout">
+          <div class="app-narrative">
+            <div class="app-heading">
+              <h2 id="app-title">За оценкой<br />виден состав.</h2>
+              <p class="section-intro">
+                Ингредиенты, пищевая ценность на 100 г и доступные сведения
+                помогут увидеть продукт целиком.
+              </p>
+              <p class="app-disclosure">
+                Демонстрационные данные: оценки и показатели показаны для
+                примера.
+              </p>
+            </div>
+            <div class="app-presentation-controls" hidden>
+              <div
+                class="app-focus-switch"
+                role="group"
+                aria-label="Выделить демонстрационный экран"
+              >
+                <button type="button" data-screen="result" aria-pressed="true">
+                  Результат
+                </button>
+                <button
+                  type="button"
+                  data-screen="composition"
+                  aria-pressed="false"
+                >
+                  Состав и данные
+                </button>
+              </div>
+              <p class="app-focus-description" aria-live="polite">
+                Общий результат: отправная точка. Дальше можно изучить
+                показатели.
+              </p>
+            </div>
+          </div>
+          <div class="app-stage">
+            <figure class="screen screen-result">
+              <img
+                src="/static/images/result-phone.webp"
+                width="421"
+                height="840"
+                loading="lazy"
+                alt="Демонстрационный экран результата: йогурт, оценка 92 из 100 и пример показателей исследования"
+              />
+            </figure>
+            <figure class="screen screen-composition">
+              <img
+                src="/static/images/composition-phone.webp"
+                width="423"
+                height="840"
+                loading="lazy"
+                alt="Демонстрационный экран состава и пищевой ценности йогурта с переходом к источникам"
+              />
+            </figure>
+          </div>
+        </div>
+        <p class="shell app-footnote">
+          Методика оценки находится в разработке. Демонстрационный рейтинг
+          иллюстрирует будущий интерфейс.
+        </p>
+      </section>
+
+      <section
+        class="trust section-space shell"
+        id="trust"
+        data-slide
+        aria-labelledby="trust-title"
+      >
+        <div class="trust-heading">
+          <h2 id="trust-title">У каждого вывода<br />своё основание.</h2>
+          <p class="section-intro">
+            Bloom планирует показывать, откуда взяты сведения и как они связаны
+            с результатом.
+          </p>
+        </div>
+        <div class="evidence-chain">
+          <details open>
+            <summary>Состав</summary>
+            <p>
+              Ингредиенты и пищевая ценность из информации о продукте. Это
+              отправная точка объяснения.
+            </p>
+          </details>
+          <details>
+            <summary>Исследование</summary>
+            <p>
+              Доступные измерения с указанием конкретного образца и даты.
+              Результат относится к исследованному образцу.
+            </p>
+          </details>
+          <details>
+            <summary>Источник</summary>
+            <p>
+              Применимый норматив или протокол, по которому можно проверить
+              основание вывода.
+            </p>
+          </details>
+        </div>
+        <div class="data-boundary">
+          <h3>Данных недостаточно</h3>
+          <div>
+            <p>Такой статус тоже часть понятного результата.</p>
+            <span
+              >При нехватке сведений Bloom покажет, что ещё требуется для
+              вывода. Результат исследования относится к конкретному
+              образцу.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="closing"
+        id="closing"
+        data-slide
+        aria-labelledby="closing-title"
+      >
+        <div class="shell closing-inner">
+          <div class="closing-brand" aria-hidden="true">
+            <img
+              src="/static/images/bloom-mark-640.webp"
+              width="640"
+              height="640"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="closing-copy">
+            <h2 id="closing-title">Больше ясности<br />в каждом выборе.</h2>
+            <p>Понятные факты о продуктах.<br />Будущее приложение Bloom.</p>
+            <!-- Replace each button with an anchor and a verified href when the app is published. -->
+            <div class="stores" aria-label="Приложение в разработке">
+              <button
+                class="store"
+                type="button"
+                aria-disabled="true"
+                data-store="app-store"
+              >
+                <img
+                  class="store-icon"
+                  src="/static/images/store-apple.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span>App Store</span><small>Скоро</small>
+              </button>
+              <button
+                class="store"
+                type="button"
+                aria-disabled="true"
+                data-store="google-play"
+              >
+                <img
+                  class="store-icon"
+                  src="/static/images/store-google-play.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span>Google Play</span><small>Скоро</small>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <a class="brand" href="#hero" aria-label="Bloom: к началу">Bloom</a
+            ><span>Знайте, что выбираете.</span
+            ><span>Приложение в разработке</span>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

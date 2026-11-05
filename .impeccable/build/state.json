@@ -1,0 +1,107 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-09-17T19:08:09.057Z",
+  "comp": ".impeccable/mocks/bloom-new.png",
+  "direction": null,
+  "breakpoint": "1505x1024",
+  "artifact": null,
+  "phase": "hero",
+  "phases": {
+    "comps": {
+      "status": "skipped",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [
+        {
+          "at": "2026-09-17T19:08:09.057Z",
+          "text": "started with an approved comp; the comp round happened before this state (surface round or manual)"
+        }
+      ],
+      "gate": null,
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-09-17T19:08:09.057Z",
+      "closedAt": "2026-09-17T19:10:20.070Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "8 regions, 1 plates, 5 text regions measured",
+        "at": "2026-09-17T19:10:20.070Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-09-17T19:10:20.070Z",
+      "closedAt": "2026-09-17T19:10:57.765Z",
+      "attempts": 3,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "1/1 plates",
+        "at": "2026-09-17T19:10:57.765Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "open",
+      "openedAt": "2026-09-17T19:10:57.765Z",
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "sections": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "motion": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "responsive": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "review": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null,
+  "plates": {
+    "hero-photo": {
+      "status": "ok",
+      "score": 0.4644,
+      "size": "1536x1024"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "source": "/Users/kr1ny77/Desktop/Bloom/bloom-logo-rounded/v3/Bloom-v3.blend",
+  "changed": "Glyph emission color only: #f2f6ea",
+  "engine": "CYCLES",
+  "device": "GPU",
+  "samples": 16,
+  "frames": [
+    1,
+    181
+  ],
+  "fps": 60,
+  "crop": [
+    180,
+    248,
+    1200,
+    500
+  ],
+  "duration_ms": 5000,
+  "seconds": 162.90149021148682,
+  "leaf_and_motion": "preserved"
+}
