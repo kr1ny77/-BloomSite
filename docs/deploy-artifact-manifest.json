@@ -1,12 +1,11 @@
 {
-  "createdAt": "2026-11-05T12:18:11.610Z",
   "root": "dist",
   "files": [
     {
       "file": "index.html",
-      "sha": "c1c6a4301b8ad824f652c5f5c5559ae31cc5620e",
-      "sha256": "be689f81a44c7f5b4fc1db846bcc55e38e1fc23eee4275a49a6684664f3d6037",
-      "size": 31543
+      "sha": "fe9270d6c82ead1631dfaa273ef09704dac3d2a5",
+      "sha256": "532aa0b123dfada97f0bde64116e7cbb48adbea63f1221a72a5f4f622c2cd1c1",
+      "size": 31727
     },
     {
       "file": "static/css/style.css",

@@ -1,0 +1,665 @@
+{
+  "origin": "https://bloomfacts.vercel.app",
+  "checked": 94,
+  "failed": [],
+  "assets": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256_match": true,
+      "type": "text/html; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/css/style.css",
+      "status": 200,
+      "sha256_match": true,
+      "type": "text/css; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/manrope-regular.ttf",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/ttf",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/manrope-regular.woff2",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/woff2",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/manrope-semibold.ttf",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/ttf",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/manrope-semibold.woff2",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/woff2",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/OFL.txt",
+      "status": 200,
+      "sha256_match": true,
+      "type": "text/plain; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/onest-bloom.woff2",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/woff2",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/Onest-OFL.txt",
+      "status": 200,
+      "sha256_match": true,
+      "type": "text/plain; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/onest-variable.ttf",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/ttf",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/onest-variable.woff2",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/woff2",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/oooh-baby-regular.ttf",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/ttf",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/oooh-baby-regular.woff2",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/woff2",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/OoohBaby-OFL.txt",
+      "status": 200,
+      "sha256_match": true,
+      "type": "text/plain; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/pacifico-loom.woff2",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/woff2",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/Pacifico-OFL.txt",
+      "status": 200,
+      "sha256_match": true,
+      "type": "text/plain; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/fonts/pacifico-regular.ttf",
+      "status": 200,
+      "sha256_match": true,
+      "type": "font/ttf",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/barcode-context-1536.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/barcode-context-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-icon.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-lowercase.svg",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/svg+xml",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-mark-320.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-mark-640.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-mark-96.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-mark.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-social.jpg",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/jpeg",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-still-life.jpg",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/jpeg",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-still-life.webp.json",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/json; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-wordmark-final.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/bloom-wordmark-first.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/composition-phone.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/context-ingredients.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/context-packaged-wide-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/context-packaged-wide.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/context-packaged.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/context-shopping-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/context-shopping.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/everyday-choice-1536.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/everyday-choice-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/favicon.png",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/png",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/food-editorial-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/food-editorial.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/groceries-story.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/groceries.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/hero-apple.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/inside-fruit-1536.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/inside-fruit-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/books.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/calendar.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/clock.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/files.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/mail.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/maps.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/messages.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/music-classic.svg",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/svg+xml",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/music.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/notes.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/phone.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/podcasts.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/safari.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/shortcuts.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/ios-apps/weather.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/journey-package-500.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/journey-package-900.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/menu-barcode.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/menu-ingredients.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/result-phone.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/store-apple.svg",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/svg+xml",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/store-barcode-1536.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/store-barcode-768.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/store-google-play.svg",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/svg+xml",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/yogurt-front.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/images/yogurt-reverse.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/app.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/gsap.min.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/intro.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/lenis.min.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/menu-preview.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/motion.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/presentation.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/product-viewer.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/product.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/scanner.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/js/ScrollTrigger.min.js",
+      "status": 200,
+      "sha256_match": true,
+      "type": "application/javascript; charset=utf-8",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-intro.mp4",
+      "status": 200,
+      "sha256_match": true,
+      "type": "video/mp4",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/intro-dark.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/intro-light.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-dark.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/intro-v3-light.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/static-dark.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/static-light.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/static-v3-dark.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/media/bloom-logo/static-v3-light.webp",
+      "status": 200,
+      "sha256_match": true,
+      "type": "image/webp",
+      "nosniff": "nosniff"
+    },
+    {
+      "file": "static/models/yogurt.glb",
+      "status": 200,
+      "sha256_match": true,
+      "type": "model/gltf-binary",
+      "nosniff": "nosniff"
+    }
+  ]
+}
