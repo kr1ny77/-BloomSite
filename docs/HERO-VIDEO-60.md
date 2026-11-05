@@ -22,3 +22,7 @@ Sources are assigned only when motion is allowed and the document is visible. Th
 ## Limits
 
 Physical Safari/iOS playback has not been measured. HEVC encoding and alpha characteristics were checked natively with AVFoundation; unsupported or blocked playback retains the static logo. Actual frame delivery depends on device, display, browser load and power policies. The site does not override browser energy-saving settings. Existing historical WebP media and Blender masters are retained for rollback.
+
+## Production release
+
+Source commit `a02702553b0e398c48322e92ade6678353e0846d` triggered production deployment `dpl_9Dfjmxr19E3UAbSJu52ki3cSmyZ1`, READY. The project alias `bloomfacts.vercel.app` was confirmed attached to this deployment. All 98 anonymous HTTPS responses matched the artifact SHA256; all four native video byte-range requests returned 206 and the requested 32 bytes. Evidence: `hero-video60-production.json`. Public browser inspection confirmed the new source markup, settled composition and no captured warning/error logs; its read-only inspection interface did not expose native media-quality methods, so measured presentation rates above come from the instrumented local page, not a claimed second production FPS measurement. Public screenshot: `hero-video60-production.jpg`.
